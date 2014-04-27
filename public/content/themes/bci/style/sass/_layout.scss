@@ -1,12 +1,64 @@
 body {
-  section.single {
-
-    h1.page-title {
-
-    }
-    article.the-missing {
-      text-align: center;
-    }
-
+  @include sans;
+  font-size: 16px;
+}
+body > header {
+  h1 {
+    @include logo;
   }
+  nav {
+    @include float-block;
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    &.contact .menu {
+      > .menu-item {
+        float: left;
+        margin-left: 1em;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &.main .menu {
+      display: table;
+      width: 100%;
+      > .menu-item {
+        display: table-cell;
+        width: 1%;
+      }
+    }
+  }
+  .logos {
+    .menu-projects-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        display: inline-block;
+        margin-left: 1em;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+section.single {
+
+  h1.page-title {
+    @include headline;
+  }
+  article.the-missing {
+    text-align: center;
+  }
+
 }

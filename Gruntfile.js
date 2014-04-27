@@ -12,7 +12,7 @@ module.exports = function (grunt) {
     uglify: {
       min: {
         files: {
-          'public/content/themes/gj-boilerplate/js/main.js': ['public/content/themes/gj-boilerplate/js/src/libs/*.js','public/content/themes/gj-boilerplate/js/src/*.js']
+          'public/content/themes/bci/js/main.js': ['public/content/themes/bci/js/src/libs/*.js','public/content/themes/bci/js/src/*.js']
         }
       }
     },
@@ -20,10 +20,10 @@ module.exports = function (grunt) {
     compass: {
       dist: {
         options: {
-          config: 'public/content/themes/gj-boilerplate/style/config.rb',
-          sassDir: 'public/content/themes/gj-boilerplate/style/sass',
-          imagesDir: 'public/content/themes/gj-boilerplate/img',
-          cssDir: 'public/content/themes/gj-boilerplate/style',
+          config: 'public/content/themes/bci/style/config.rb',
+          sassDir: 'public/content/themes/bci/style/sass',
+          imagesDir: 'public/content/themes/bci/img',
+          cssDir: 'public/content/themes/bci/style',
           environment: 'production',
           outputStyle: 'compressed',
           force: true
@@ -35,16 +35,16 @@ module.exports = function (grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'public/content/themes/gj-boilerplate/img/src',
+          cwd: 'public/content/themes/bci/img/src',
           src: ['*.{png,jpg,gif}'],
-          dest: 'public/content/themes/gj-boilerplate/img/'
+          dest: 'public/content/themes/bci/img/'
         }]
       }
     },
 
     browser_sync: {
       files: {
-        src: 'public/content/themes/gj-boilerplate/style/screen.css'
+        src: 'public/content/themes/bci/style/screen.css'
       },
       options: {
           host: "localhost",
@@ -57,15 +57,15 @@ module.exports = function (grunt) {
         livereload: true
       },
       scripts: {
-        files: ['public/content/themes/gj-boilerplate/js/src/*.js','public/content/themes/gj-boilerplate/js/src/libs/*.js'],
+        files: ['public/content/themes/bci/js/src/*.js','public/content/themes/bci/js/src/libs/*.js'],
         tasks: ['uglify']
       },
       styles: {
-        files: ['public/content/themes/gj-boilerplate/style/**/*.{sass,scss}','public/content/themes/gj-boilerplate/img/ui/*.png'],
+        files: ['public/content/themes/bci/style/**/*.{sass,scss}','public/content/themes/bci/img/ui/*.png'],
         tasks: ['compass']
       },
       images: {
-        files: ['public/content/themes/gj-boilerplate/img/src/*.{png,jpg,gif}'],
+        files: ['public/content/themes/bci/img/src/*.{png,jpg,gif}'],
         tasks: ['imagemin']
       }
     },

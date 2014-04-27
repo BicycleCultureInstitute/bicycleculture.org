@@ -25,3 +25,10 @@
   -o-#{$name}: #{$argument};
   #{$name}: #{$argument};
 }
+@mixin float-block {
+  &:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
