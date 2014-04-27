@@ -15,9 +15,10 @@ $experimental-support-for-svg: true;
 $rgbapng_path: 'generated';
 $rgbapng_px_size: 1;
 @import "rgbapng";
+/* hey there */
 
 /* Bootstrap v3 */
-//@import "bootstrap";
+@import "bootstrap";
 
 /* SCSS Modules */
 @import "mixins";

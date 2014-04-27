@@ -1,10 +1,10 @@
 <?php
 /*
-*
+* Template Name: Project
 */
 get_header();
 
-echo '<section class="single">';
+echo '<section class="single project">';
 
 
   if(have_posts()) : while(have_posts()) : the_post();

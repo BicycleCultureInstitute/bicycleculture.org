@@ -19,3 +19,24 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+  <header>
+    <nav class="contact">
+      <ul>
+        <?php wp_nav_menu(array('theme_location'=>'contact')); ?>
+      </ul>
+    </nav>
+    <div class="logos">
+      <h1>BCI LOGO</h1>
+      <ul>
+        <?php wp_nav_menu(array('theme_location'=>'projects')); ?>
+      </ul>
+    </div>
+    <nav class="main">
+      <ul>
+        <?php wp_nav_menu(array(
+          'theme_location' => 'main',
+          'walker' => new wp_bootstrap_navwalker()
+        )); ?>
+      </ul>
+    </nav>
+  </header>

@@ -8,5 +8,7 @@ $google_analytics_id = 'UA-XXXXXXXX-X';
 
 // Navigation Menu Array
 register_nav_menus( array(
-  'main' => 'Main Navigation'
+  'main' => 'Main Navigation',
+  'projects' => 'Projects Logos',
+  'contact' => 'Contact Options'
 ) );
