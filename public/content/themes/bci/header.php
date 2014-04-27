@@ -16,6 +16,9 @@
 
   <link rel="stylesheet" href="<?php echo $style_uri; ?>" />
 
+  <script type="text/javascript" src="//use.typekit.net/jbq0msd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -27,8 +30,10 @@
       )); ?>
     </nav>
     <div class="logos">
-      <h1>BCI LOGO</h1>
-      <?php wp_nav_menu(array('theme_location'=>'projects')); ?>
+    <h1><a href="<?php bloginfo('url'); ?>">BCI LOGO</a></h1>
+      <ul class="header-widgets">
+        <?php dynamic_sidebar('Header'); ?>
+      </ul>
     </div>
     <nav class="main">
       <?php wp_nav_menu(array(

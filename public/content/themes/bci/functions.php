@@ -9,6 +9,14 @@ $google_analytics_id = 'UA-XXXXXXXX-X';
 // Navigation Menu Array
 register_nav_menus( array(
   'main' => 'Main Navigation',
-  'projects' => 'Projects Logos',
   'contact' => 'Contact Options'
+) );
+
+// Sidebar / Widget Array
+register_sidebar( array(
+  'name' => 'Header'/*,
+  'before_title' => '',
+  'after_title' => '',
+  'before_widget' => '',
+  'after_widget' => '' */
 ) );

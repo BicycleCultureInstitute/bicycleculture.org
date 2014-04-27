@@ -33,27 +33,35 @@ body > header {
   }
   .logos {
     position: relative;
-    .menu-projects-container {
+
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .header-widgets {
       position: absolute;
       right: 0;
       top: 0;
+    }
+    .widget {
+      display: inline-block;
+    }
 
-      ul, li {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      li {
-        display: inline-block;
-        margin-left: 1em;
-        &:first-child {
-          margin-left: 0;
-        }
+    .menu-projects-container li {
+      display: inline-block;
+      margin-left: 1em;
+      &:first-child {
+        margin-left: 0;
       }
     }
+
   }
 }
 section.single {
+
+  @extend .container;
 
   h1.page-title {
     @include headline;
