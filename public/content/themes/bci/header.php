@@ -30,7 +30,7 @@
       )); ?>
     </nav>
     <div class="logos">
-    <h1><a href="<?php bloginfo('url'); ?>">BCI LOGO</a></h1>
+    <h1><a href="<?php bloginfo('url'); ?>" style="background-image:url(<?php echo get_theme_mod('logo'); ?>);"><?php bloginfo('title'); ?></a></h1>
       <ul class="header-widgets">
         <?php dynamic_sidebar('Header'); ?>
       </ul>

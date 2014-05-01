@@ -5,6 +5,19 @@ body {
 body > header {
   h1 {
     @include logo;
+    a {
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      height: 120px;
+      overflow: hidden;
+
+      &:before {
+        display: block;
+        height: 100%;
+        content: ' ';
+      }
+    }
   }
   nav {
     @include float-block;
