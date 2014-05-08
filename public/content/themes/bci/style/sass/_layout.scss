@@ -1,8 +1,25 @@
 body {
   @include sans;
   font-size: 16px;
+  background-color: $concrete;
+  // @extend .background-bg;
+}
+h1, h2, h3, h4, h5, h6 {
+  @extend .primary-color;
+}
+nav {
+  @extend .gray-bg;
+}
+nav.main {
+  @extend .accent-bg;
+}
+body > section {
+  background-color: $white;
 }
 body > header {
+  border-bottom: 0.5em;
+  @extend .accent-border;
+
   h1 {
     @include logo;
     a {

@@ -1,9 +1,9 @@
 // BCI color palette with variables
 // names from gpick for Ubuntu, except where they were crazy
 
-$crimson      : #EE156F;
+$magenta      : #EE156F;
 $orange_red   : #EF2921;
-$christi      : #6EC72D;
+$green        : #6EC72D;
 $bitter_lemon : #CFD407;
 $golden       : #FDD23B;
 $teal         : #6BCDC3;
@@ -16,9 +16,9 @@ $white_smoke  : #E9E9E9;
 $white        : #FFFFFF;
 
 $colors:
-  'crimson'      $crimson,
+  'magenta'      $magenta,
   'orange_red'   $orange_red,
-  'christi'      $christi,
+  'green'        $green,
   'bitter_lemon' $bitter_lemon,
   'golden'       $golden,
   'teal'         $teal,
@@ -31,17 +31,40 @@ $colors:
   'white'        $white
 ;
 
-@each $animal, $color, $cursor in (puma, black, default),
-(sea-slug, blue, pointer),
-(egret, white, move) {
-  .#{$animal}-icon {
-    background-image: url('/images/#{$animal}.png');
-    border: 2px solid $color;
-    cursor: $cursor;
-  }
+@each $color in $colors {
+  $name: nth($color, 1);
+  $value: nth($color, 2);
+  .#{$name} { color: $value; }
+  .bg-#{$name} { background-color: $value; }
 }
 
-@each $name, $color in $colors {
-  .#{$name} { color: $color; }
-  .bg-#{$name} { background-color: $color; }
-}
+$colorSchemes:
+  //          , primary     , accent        , background , gray
+  ('bci'      , $cobalt     , $bermuda      , $concrete  , $concrete),
+  ('labt'     , $green      , $bitter_lemon , $aluminum  , $concrete),
+  ('r5y7'     , $orange_red , $orange_red   , $cobalt    , $concrete),
+  ('festival' , $magenta    , $teal         , $magenta   , $concrete)
+;
+
+@each $set in $colorSchemes {
+  $name       : nth($set, 1);
+  $primary    : nth($set, 2);
+  $accent     : nth($set, 3);
+  $background : nth($set, 4);
+
+  .colorscheme-#{$name} .primary-color     { color: $primary; }
+  .colorscheme-#{$name} .primary-bg        { background-color: $primary; }
+  .colorscheme-#{$name} .primary-border    { border-color: $primary; }
+
+  .colorscheme-#{$name} .accent-color      { color: $accent; }
+  .colorscheme-#{$name} .accent-bg         { background-color: $accent; }
+  .colorscheme-#{$name} .accent-border     { border-color: $accent; }
+
+  .colorscheme-#{$name} .background-color  { color: $background; }
+  .colorscheme-#{$name} .background-bg     { background-color: $background; }
+  .colorscheme-#{$name} .background-border { border-color: $background; }
+
+  .colorscheme-#{$name} .gray-color        { color: $concrete; }
+  .colorscheme-#{$name} .gray-bg           { background-color: $concrete; }
+  .colorscheme-#{$name} .gray-border       { border-color: $concrete; }
+  }

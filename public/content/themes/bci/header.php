@@ -21,7 +21,7 @@
 
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(array('colorscheme-festival')); ?>>
   <header class="container">
     <nav class="contact">
       <?php wp_nav_menu(array('theme_location' => 'contact')); ?>
