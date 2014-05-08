@@ -24,10 +24,7 @@
 <body <?php body_class(); ?>>
   <header class="container">
     <nav class="contact">
-      <?php wp_nav_menu(array(
-        'theme_location' => 'contact',
-        'walker' => new wp_bootstrap_navwalker()
-      )); ?>
+      <?php wp_nav_menu(array('theme_location' => 'contact')); ?>
     </nav>
     <div class="logos">
     <h1><a href="<?php bloginfo('url'); ?>" style="background-image:url(<?php echo get_theme_mod('logo'); ?>);"><?php bloginfo('title'); ?></a></h1>
@@ -36,9 +33,6 @@
       </ul>
     </div>
     <nav class="main">
-      <?php wp_nav_menu(array(
-        'theme_location' => 'main',
-        'walker' => new wp_bootstrap_navwalker()
-      )); ?>
+      <?php wp_nav_menu(array('theme_location' => 'main')); ?>
     </nav>
   </header>

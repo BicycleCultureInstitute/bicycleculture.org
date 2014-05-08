@@ -150,6 +150,3 @@ if(function_exists("register_field_group")) {
     'menu_order' => 0,
   ));
 }
-
-// Include menu walker for bootstrap dropdowns
-require_once get_template_directory() . '/inc/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php';
