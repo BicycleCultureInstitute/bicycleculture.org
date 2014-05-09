@@ -1142,14 +1142,14 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, nav.main li, body > header h1, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, body > header .widget, body > header .menu-projects-container li, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, body > header .header-widgets, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, section.single .page-subnav, .col-md-3, .col-lg-3, .col-xs-4, ul.projects-widget li, .col-sm-4, body > header .widget, body > header .menu-projects-container li, ul.projects-widget, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, section.single article, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, ul.projects-widget li, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 
@@ -1185,7 +1185,7 @@ pre code {
   width: 41.66666667%;
 }
 
-.col-xs-4 {
+.col-xs-4, ul.projects-widget li {
   width: 33.33333333%;
 }
 
@@ -1358,7 +1358,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, section.single .page-subnav, .col-sm-4, body > header .widget, body > header .menu-projects-container li, ul.projects-widget, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, section.single article, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
@@ -1370,11 +1370,11 @@ pre code {
     width: 91.66666667%;
   }
 
-  .col-sm-10 {
+  .col-sm-10, body > header .header-widgets {
     width: 83.33333333%;
   }
 
-  .col-sm-9 {
+  .col-sm-9, section.single article {
     width: 75%;
   }
 
@@ -1394,15 +1394,15 @@ pre code {
     width: 41.66666667%;
   }
 
-  .col-sm-4 {
+  .col-sm-4, body > header .widget, body > header .menu-projects-container li, ul.projects-widget {
     width: 33.33333333%;
   }
 
-  .col-sm-3 {
+  .col-sm-3, section.single .page-subnav {
     width: 25%;
   }
 
-  .col-sm-2 {
+  .col-sm-2, nav.main li, body > header h1 {
     width: 16.66666667%;
   }
 
@@ -1558,7 +1558,7 @@ pre code {
     margin-left: 16.66666667%;
   }
 
-  .col-sm-offset-1 {
+  .col-sm-offset-1, nav.main li:first-child {
     margin-left: 8.33333333%;
   }
 
@@ -1567,7 +1567,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, nav.main li, body > header h1, .col-md-3, .col-md-4, body > header .widget, body > header .menu-projects-container li, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, body > header .header-widgets, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -1579,7 +1579,7 @@ pre code {
     width: 91.66666667%;
   }
 
-  .col-md-10, body > header .header-widgets {
+  .col-md-10 {
     width: 83.33333333%;
   }
 
@@ -1603,7 +1603,7 @@ pre code {
     width: 41.66666667%;
   }
 
-  .col-md-4, body > header .widget, body > header .menu-projects-container li {
+  .col-md-4 {
     width: 33.33333333%;
   }
 
@@ -1611,7 +1611,7 @@ pre code {
     width: 25%;
   }
 
-  .col-md-2, nav.main li, body > header h1 {
+  .col-md-2 {
     width: 16.66666667%;
   }
 
@@ -1767,7 +1767,7 @@ pre code {
     margin-left: 16.66666667%;
   }
 
-  .col-md-offset-1, nav.main li:first-child {
+  .col-md-offset-1 {
     margin-left: 8.33333333%;
   }
 
@@ -3962,7 +3962,7 @@ input[type="button"].btn-block {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
-.dropdown-menu.pull-right {
+.dropdown-menu.pull-right, ul.dropdown-menu.projects-widget {
   right: 0;
   left: auto;
 }
@@ -4050,7 +4050,7 @@ input[type="button"].btn-block {
   z-index: 990;
 }
 
-.pull-right > .dropdown-menu {
+.pull-right > .dropdown-menu, ul.projects-widget > .dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -5830,7 +5830,7 @@ a.thumbnail.active {
   margin-right: 10px;
 }
 
-.media > .pull-right {
+.media > .pull-right, .media > ul.projects-widget {
   margin-left: 10px;
 }
 
@@ -7066,7 +7066,7 @@ section.single:after,
   margin-left: auto;
 }
 
-.pull-right {
+.pull-right, ul.projects-widget {
   float: right !important;
 }
 
@@ -7257,11 +7257,11 @@ body {
   background-color: #ef2921;
 }
 
-.green {
+.grass {
   color: #6ec72d;
 }
 
-.bg-green {
+.bg-grass {
   background-color: #6ec72d;
 }
 
@@ -7303,6 +7303,22 @@ body {
 
 .bg-bermuda {
   background-color: #61849c;
+}
+
+.zodiac {
+  color: #5b6274;
+}
+
+.bg-zodiac {
+  background-color: #5b6274;
+}
+
+.panda {
+  color: #57543e;
+}
+
+.bg-panda {
+  background-color: #57543e;
 }
 
 .nero {
@@ -7366,27 +7382,63 @@ body {
 }
 
 .colorscheme-bci .primary-color-darker, .colorscheme-bci.primary-color-darker {
-  color: black;
+  color: #17273f;
 }
 
 .colorscheme-bci .primary-bg-darker, .colorscheme-bci.primary-bg-darker {
-  background-color: black;
+  background-color: #17273f;
 }
 
 .colorscheme-bci .primary-border-darker, .colorscheme-bci.primary-border-darker {
-  border-color: black;
+  border-color: #17273f;
 }
 
 .colorscheme-bci .primary-color-lighter, .colorscheme-bci.primary-color-lighter {
-  color: #5d87c5;
+  color: #31558b;
 }
 
 .colorscheme-bci .primary-bg-lighter, .colorscheme-bci.primary-bg-lighter {
-  background-color: #5d87c5;
+  background-color: #31558b;
 }
 
 .colorscheme-bci .primary-border-lighter, .colorscheme-bci.primary-border-lighter {
-  border-color: #5d87c5;
+  border-color: #31558b;
+}
+
+.colorscheme-bci .title-color, .colorscheme-bci section.single h1.page-title, section.single .colorscheme-bci h1.page-title, .colorscheme-bci.title-color, section.single h1.colorscheme-bci.page-title {
+  color: #5b6274;
+}
+
+.colorscheme-bci .title-bg, .colorscheme-bci.title-bg {
+  background-color: #5b6274;
+}
+
+.colorscheme-bci .title-border, .colorscheme-bci.title-border {
+  border-color: #5b6274;
+}
+
+.colorscheme-bci .title-color-darker, .colorscheme-bci.title-color-darker {
+  color: #454a57;
+}
+
+.colorscheme-bci .title-bg-darker, .colorscheme-bci.title-bg-darker {
+  background-color: #454a57;
+}
+
+.colorscheme-bci .title-border-darker, .colorscheme-bci.title-border-darker {
+  border-color: #454a57;
+}
+
+.colorscheme-bci .title-color-lighter, .colorscheme-bci.title-color-lighter {
+  color: #727a90;
+}
+
+.colorscheme-bci .title-bg-lighter, .colorscheme-bci.title-bg-lighter {
+  background-color: #727a90;
+}
+
+.colorscheme-bci .title-border-lighter, .colorscheme-bci.title-border-lighter {
+  border-color: #727a90;
 }
 
 .colorscheme-bci .accent-color, .colorscheme-bci.accent-color {
@@ -7402,27 +7454,27 @@ body {
 }
 
 .colorscheme-bci .accent-color-darker, .colorscheme-bci.accent-color-darker {
-  color: #26343e;
+  color: #4d697d;
 }
 
-.colorscheme-bci .accent-bg-darker, .colorscheme-bci.accent-bg-darker {
-  background-color: #26343e;
+.colorscheme-bci .accent-bg-darker, .colorscheme-bci nav.main li a:hover, nav.main li .colorscheme-bci a:hover, .colorscheme-bci nav.main li.current-menu-item, nav.main .colorscheme-bci li.current-menu-item, .colorscheme-bci nav.main li.current-page-ancestor, nav.main .colorscheme-bci li.current-page-ancestor, .colorscheme-bci.accent-bg-darker, nav.main li a.colorscheme-bci:hover, nav.main li.colorscheme-bci.current-menu-item, nav.main li.colorscheme-bci.current-page-ancestor {
+  background-color: #4d697d;
 }
 
 .colorscheme-bci .accent-border-darker, .colorscheme-bci.accent-border-darker {
-  border-color: #26343e;
+  border-color: #4d697d;
 }
 
 .colorscheme-bci .accent-color-lighter, .colorscheme-bci.accent-color-lighter {
-  color: #bfcdd7;
+  color: #809cb0;
 }
 
 .colorscheme-bci .accent-bg-lighter, .colorscheme-bci.accent-bg-lighter {
-  background-color: #bfcdd7;
+  background-color: #809cb0;
 }
 
 .colorscheme-bci .accent-border-lighter, .colorscheme-bci.accent-border-lighter {
-  border-color: #bfcdd7;
+  border-color: #809cb0;
 }
 
 .colorscheme-bci .outer-color, .colorscheme-bci.outer-color {
@@ -7438,15 +7490,15 @@ body {
 }
 
 .colorscheme-bci .outer-color-darker, .colorscheme-bci.outer-color-darker {
-  color: #9d9d9d;
+  color: #d0d0d0;
 }
 
 .colorscheme-bci .outer-bg-darker, .colorscheme-bci.outer-bg-darker {
-  background-color: #9d9d9d;
+  background-color: #d0d0d0;
 }
 
 .colorscheme-bci .outer-border-darker, .colorscheme-bci.outer-border-darker {
-  border-color: #9d9d9d;
+  border-color: #d0d0d0;
 }
 
 .colorscheme-bci .outer-color-lighter, .colorscheme-bci.outer-color-lighter {
@@ -7459,42 +7511,6 @@ body {
 
 .colorscheme-bci .outer-border-lighter, .colorscheme-bci.outer-border-lighter {
   border-color: white;
-}
-
-.colorscheme-bci .gray-color, .colorscheme-bci.gray-color {
-  color: #8a8d8d;
-}
-
-.colorscheme-bci .gray-bg, .colorscheme-bci nav.contact, .colorscheme-bci.gray-bg, nav.colorscheme-bci.contact {
-  background-color: #8a8d8d;
-}
-
-.colorscheme-bci .gray-border, .colorscheme-bci.gray-border {
-  border-color: #8a8d8d;
-}
-
-.colorscheme-bci .gray-color-darker, .colorscheme-bci.gray-color-darker {
-  color: #3e4040;
-}
-
-.colorscheme-bci .gray-bg-darker, .colorscheme-bci.gray-bg-darker {
-  background-color: #3e4040;
-}
-
-.colorscheme-bci .gray-border-darker, .colorscheme-bci.gray-border-darker {
-  border-color: #3e4040;
-}
-
-.colorscheme-bci .gray-color-lighter, .colorscheme-bci.gray-color-lighter {
-  color: #d7d9d9;
-}
-
-.colorscheme-bci .gray-bg-lighter, .colorscheme-bci.gray-bg-lighter {
-  background-color: #d7d9d9;
-}
-
-.colorscheme-bci .gray-border-lighter, .colorscheme-bci.gray-border-lighter {
-  border-color: #d7d9d9;
 }
 
 .colorscheme-l-a-bike-trains .primary-color, .colorscheme-l-a-bike-trains h1, .colorscheme-l-a-bike-trains h2, .colorscheme-l-a-bike-trains h3, .colorscheme-l-a-bike-trains h4, .colorscheme-l-a-bike-trains h5, .colorscheme-l-a-bike-trains h6, .colorscheme-l-a-bike-trains a, .colorscheme-l-a-bike-trains.primary-color, h1.colorscheme-l-a-bike-trains, h2.colorscheme-l-a-bike-trains, h3.colorscheme-l-a-bike-trains, h4.colorscheme-l-a-bike-trains, h5.colorscheme-l-a-bike-trains, h6.colorscheme-l-a-bike-trains, a.colorscheme-l-a-bike-trains {
@@ -7510,63 +7526,99 @@ body {
 }
 
 .colorscheme-l-a-bike-trains .primary-color-darker, .colorscheme-l-a-bike-trains.primary-color-darker {
-  color: #294a11;
+  color: #579d24;
 }
 
 .colorscheme-l-a-bike-trains .primary-bg-darker, .colorscheme-l-a-bike-trains.primary-bg-darker {
-  background-color: #294a11;
+  background-color: #579d24;
 }
 
 .colorscheme-l-a-bike-trains .primary-border-darker, .colorscheme-l-a-bike-trains.primary-border-darker {
-  border-color: #294a11;
+  border-color: #579d24;
 }
 
 .colorscheme-l-a-bike-trains .primary-color-lighter, .colorscheme-l-a-bike-trains.primary-color-lighter {
-  color: #c1eaa3;
+  color: #89d750;
 }
 
 .colorscheme-l-a-bike-trains .primary-bg-lighter, .colorscheme-l-a-bike-trains.primary-bg-lighter {
-  background-color: #c1eaa3;
+  background-color: #89d750;
 }
 
 .colorscheme-l-a-bike-trains .primary-border-lighter, .colorscheme-l-a-bike-trains.primary-border-lighter {
-  border-color: #c1eaa3;
+  border-color: #89d750;
+}
+
+.colorscheme-l-a-bike-trains .title-color, .colorscheme-l-a-bike-trains section.single h1.page-title, section.single .colorscheme-l-a-bike-trains h1.page-title, .colorscheme-l-a-bike-trains.title-color, section.single h1.colorscheme-l-a-bike-trains.page-title {
+  color: #6ec72d;
+}
+
+.colorscheme-l-a-bike-trains .title-bg, .colorscheme-l-a-bike-trains.title-bg {
+  background-color: #6ec72d;
+}
+
+.colorscheme-l-a-bike-trains .title-border, .colorscheme-l-a-bike-trains.title-border {
+  border-color: #6ec72d;
+}
+
+.colorscheme-l-a-bike-trains .title-color-darker, .colorscheme-l-a-bike-trains.title-color-darker {
+  color: #579d24;
+}
+
+.colorscheme-l-a-bike-trains .title-bg-darker, .colorscheme-l-a-bike-trains.title-bg-darker {
+  background-color: #579d24;
+}
+
+.colorscheme-l-a-bike-trains .title-border-darker, .colorscheme-l-a-bike-trains.title-border-darker {
+  border-color: #579d24;
+}
+
+.colorscheme-l-a-bike-trains .title-color-lighter, .colorscheme-l-a-bike-trains.title-color-lighter {
+  color: #89d750;
+}
+
+.colorscheme-l-a-bike-trains .title-bg-lighter, .colorscheme-l-a-bike-trains.title-bg-lighter {
+  background-color: #89d750;
+}
+
+.colorscheme-l-a-bike-trains .title-border-lighter, .colorscheme-l-a-bike-trains.title-border-lighter {
+  border-color: #89d750;
 }
 
 .colorscheme-l-a-bike-trains .accent-color, .colorscheme-l-a-bike-trains.accent-color {
-  color: #cfd407;
+  color: #57543e;
 }
 
 .colorscheme-l-a-bike-trains .accent-bg, .colorscheme-l-a-bike-trains nav.main, .colorscheme-l-a-bike-trains.accent-bg, nav.colorscheme-l-a-bike-trains.main {
-  background-color: #cfd407;
+  background-color: #57543e;
 }
 
 .colorscheme-l-a-bike-trains .accent-border, .colorscheme-l-a-bike-trains.accent-border {
-  border-color: #cfd407;
+  border-color: #57543e;
 }
 
 .colorscheme-l-a-bike-trains .accent-color-darker, .colorscheme-l-a-bike-trains.accent-color-darker {
-  color: #3e4002;
+  color: #393729;
 }
 
-.colorscheme-l-a-bike-trains .accent-bg-darker, .colorscheme-l-a-bike-trains.accent-bg-darker {
-  background-color: #3e4002;
+.colorscheme-l-a-bike-trains .accent-bg-darker, .colorscheme-l-a-bike-trains nav.main li a:hover, nav.main li .colorscheme-l-a-bike-trains a:hover, .colorscheme-l-a-bike-trains nav.main li.current-menu-item, nav.main .colorscheme-l-a-bike-trains li.current-menu-item, .colorscheme-l-a-bike-trains nav.main li.current-page-ancestor, nav.main .colorscheme-l-a-bike-trains li.current-page-ancestor, .colorscheme-l-a-bike-trains.accent-bg-darker, nav.main li a.colorscheme-l-a-bike-trains:hover, nav.main li.colorscheme-l-a-bike-trains.current-menu-item, nav.main li.colorscheme-l-a-bike-trains.current-page-ancestor {
+  background-color: #393729;
 }
 
 .colorscheme-l-a-bike-trains .accent-border-darker, .colorscheme-l-a-bike-trains.accent-border-darker {
-  border-color: #3e4002;
+  border-color: #393729;
 }
 
 .colorscheme-l-a-bike-trains .accent-color-lighter, .colorscheme-l-a-bike-trains.accent-color-lighter {
-  color: #f7fb79;
+  color: #757153;
 }
 
 .colorscheme-l-a-bike-trains .accent-bg-lighter, .colorscheme-l-a-bike-trains.accent-bg-lighter {
-  background-color: #f7fb79;
+  background-color: #757153;
 }
 
 .colorscheme-l-a-bike-trains .accent-border-lighter, .colorscheme-l-a-bike-trains.accent-border-lighter {
-  border-color: #f7fb79;
+  border-color: #757153;
 }
 
 .colorscheme-l-a-bike-trains .outer-color, .colorscheme-l-a-bike-trains.outer-color {
@@ -7582,63 +7634,27 @@ body {
 }
 
 .colorscheme-l-a-bike-trains .outer-color-darker, .colorscheme-l-a-bike-trains.outer-color-darker {
-  color: #26343e;
+  color: #4d697d;
 }
 
 .colorscheme-l-a-bike-trains .outer-bg-darker, .colorscheme-l-a-bike-trains.outer-bg-darker {
-  background-color: #26343e;
+  background-color: #4d697d;
 }
 
 .colorscheme-l-a-bike-trains .outer-border-darker, .colorscheme-l-a-bike-trains.outer-border-darker {
-  border-color: #26343e;
+  border-color: #4d697d;
 }
 
 .colorscheme-l-a-bike-trains .outer-color-lighter, .colorscheme-l-a-bike-trains.outer-color-lighter {
-  color: #bfcdd7;
+  color: #809cb0;
 }
 
 .colorscheme-l-a-bike-trains .outer-bg-lighter, .colorscheme-l-a-bike-trains.outer-bg-lighter {
-  background-color: #bfcdd7;
+  background-color: #809cb0;
 }
 
 .colorscheme-l-a-bike-trains .outer-border-lighter, .colorscheme-l-a-bike-trains.outer-border-lighter {
-  border-color: #bfcdd7;
-}
-
-.colorscheme-l-a-bike-trains .gray-color, .colorscheme-l-a-bike-trains.gray-color {
-  color: #8a8d8d;
-}
-
-.colorscheme-l-a-bike-trains .gray-bg, .colorscheme-l-a-bike-trains nav.contact, .colorscheme-l-a-bike-trains.gray-bg, nav.colorscheme-l-a-bike-trains.contact {
-  background-color: #8a8d8d;
-}
-
-.colorscheme-l-a-bike-trains .gray-border, .colorscheme-l-a-bike-trains.gray-border {
-  border-color: #8a8d8d;
-}
-
-.colorscheme-l-a-bike-trains .gray-color-darker, .colorscheme-l-a-bike-trains.gray-color-darker {
-  color: #3e4040;
-}
-
-.colorscheme-l-a-bike-trains .gray-bg-darker, .colorscheme-l-a-bike-trains.gray-bg-darker {
-  background-color: #3e4040;
-}
-
-.colorscheme-l-a-bike-trains .gray-border-darker, .colorscheme-l-a-bike-trains.gray-border-darker {
-  border-color: #3e4040;
-}
-
-.colorscheme-l-a-bike-trains .gray-color-lighter, .colorscheme-l-a-bike-trains.gray-color-lighter {
-  color: #d7d9d9;
-}
-
-.colorscheme-l-a-bike-trains .gray-bg-lighter, .colorscheme-l-a-bike-trains.gray-bg-lighter {
-  background-color: #d7d9d9;
-}
-
-.colorscheme-l-a-bike-trains .gray-border-lighter, .colorscheme-l-a-bike-trains.gray-border-lighter {
-  border-color: #d7d9d9;
+  border-color: #809cb0;
 }
 
 .colorscheme-r5y7 .primary-color, .colorscheme-r5y7 h1, .colorscheme-r5y7 h2, .colorscheme-r5y7 h3, .colorscheme-r5y7 h4, .colorscheme-r5y7 h5, .colorscheme-r5y7 h6, .colorscheme-r5y7 a, .colorscheme-r5y7.primary-color, h1.colorscheme-r5y7, h2.colorscheme-r5y7, h3.colorscheme-r5y7, h4.colorscheme-r5y7, h5.colorscheme-r5y7, h6.colorscheme-r5y7, a.colorscheme-r5y7 {
@@ -7654,27 +7670,63 @@ body {
 }
 
 .colorscheme-r5y7 .primary-color-darker, .colorscheme-r5y7.primary-color-darker {
-  color: #6f0c08;
+  color: #ce160f;
 }
 
 .colorscheme-r5y7 .primary-bg-darker, .colorscheme-r5y7.primary-bg-darker {
-  background-color: #6f0c08;
+  background-color: #ce160f;
 }
 
 .colorscheme-r5y7 .primary-border-darker, .colorscheme-r5y7.primary-border-darker {
-  border-color: #6f0c08;
+  border-color: #ce160f;
 }
 
 .colorscheme-r5y7 .primary-color-lighter, .colorscheme-r5y7.primary-color-lighter {
-  color: #f9b3b0;
+  color: #f25751;
 }
 
 .colorscheme-r5y7 .primary-bg-lighter, .colorscheme-r5y7.primary-bg-lighter {
-  background-color: #f9b3b0;
+  background-color: #f25751;
 }
 
 .colorscheme-r5y7 .primary-border-lighter, .colorscheme-r5y7.primary-border-lighter {
-  border-color: #f9b3b0;
+  border-color: #f25751;
+}
+
+.colorscheme-r5y7 .title-color, .colorscheme-r5y7 section.single h1.page-title, section.single .colorscheme-r5y7 h1.page-title, .colorscheme-r5y7.title-color, section.single h1.colorscheme-r5y7.page-title {
+  color: #ef2921;
+}
+
+.colorscheme-r5y7 .title-bg, .colorscheme-r5y7.title-bg {
+  background-color: #ef2921;
+}
+
+.colorscheme-r5y7 .title-border, .colorscheme-r5y7.title-border {
+  border-color: #ef2921;
+}
+
+.colorscheme-r5y7 .title-color-darker, .colorscheme-r5y7.title-color-darker {
+  color: #ce160f;
+}
+
+.colorscheme-r5y7 .title-bg-darker, .colorscheme-r5y7.title-bg-darker {
+  background-color: #ce160f;
+}
+
+.colorscheme-r5y7 .title-border-darker, .colorscheme-r5y7.title-border-darker {
+  border-color: #ce160f;
+}
+
+.colorscheme-r5y7 .title-color-lighter, .colorscheme-r5y7.title-color-lighter {
+  color: #f25751;
+}
+
+.colorscheme-r5y7 .title-bg-lighter, .colorscheme-r5y7.title-bg-lighter {
+  background-color: #f25751;
+}
+
+.colorscheme-r5y7 .title-border-lighter, .colorscheme-r5y7.title-border-lighter {
+  border-color: #f25751;
 }
 
 .colorscheme-r5y7 .accent-color, .colorscheme-r5y7.accent-color {
@@ -7690,27 +7742,27 @@ body {
 }
 
 .colorscheme-r5y7 .accent-color-darker, .colorscheme-r5y7.accent-color-darker {
-  color: #6f0c08;
+  color: #ce160f;
 }
 
-.colorscheme-r5y7 .accent-bg-darker, .colorscheme-r5y7.accent-bg-darker {
-  background-color: #6f0c08;
+.colorscheme-r5y7 .accent-bg-darker, .colorscheme-r5y7 nav.main li a:hover, nav.main li .colorscheme-r5y7 a:hover, .colorscheme-r5y7 nav.main li.current-menu-item, nav.main .colorscheme-r5y7 li.current-menu-item, .colorscheme-r5y7 nav.main li.current-page-ancestor, nav.main .colorscheme-r5y7 li.current-page-ancestor, .colorscheme-r5y7.accent-bg-darker, nav.main li a.colorscheme-r5y7:hover, nav.main li.colorscheme-r5y7.current-menu-item, nav.main li.colorscheme-r5y7.current-page-ancestor {
+  background-color: #ce160f;
 }
 
 .colorscheme-r5y7 .accent-border-darker, .colorscheme-r5y7.accent-border-darker {
-  border-color: #6f0c08;
+  border-color: #ce160f;
 }
 
 .colorscheme-r5y7 .accent-color-lighter, .colorscheme-r5y7.accent-color-lighter {
-  color: #f9b3b0;
+  color: #f25751;
 }
 
 .colorscheme-r5y7 .accent-bg-lighter, .colorscheme-r5y7.accent-bg-lighter {
-  background-color: #f9b3b0;
+  background-color: #f25751;
 }
 
 .colorscheme-r5y7 .accent-border-lighter, .colorscheme-r5y7.accent-border-lighter {
-  border-color: #f9b3b0;
+  border-color: #f25751;
 }
 
 .colorscheme-r5y7 .outer-color, .colorscheme-r5y7.outer-color {
@@ -7726,63 +7778,27 @@ body {
 }
 
 .colorscheme-r5y7 .outer-color-darker, .colorscheme-r5y7.outer-color-darker {
-  color: black;
+  color: #0e0f10;
 }
 
 .colorscheme-r5y7 .outer-bg-darker, .colorscheme-r5y7.outer-bg-darker {
-  background-color: black;
+  background-color: #0e0f10;
 }
 
 .colorscheme-r5y7 .outer-border-darker, .colorscheme-r5y7.outer-border-darker {
-  border-color: black;
+  border-color: #0e0f10;
 }
 
 .colorscheme-r5y7 .outer-color-lighter, .colorscheme-r5y7.outer-color-lighter {
-  color: #717479;
+  color: #404144;
 }
 
 .colorscheme-r5y7 .outer-bg-lighter, .colorscheme-r5y7.outer-bg-lighter {
-  background-color: #717479;
+  background-color: #404144;
 }
 
 .colorscheme-r5y7 .outer-border-lighter, .colorscheme-r5y7.outer-border-lighter {
-  border-color: #717479;
-}
-
-.colorscheme-r5y7 .gray-color, .colorscheme-r5y7.gray-color {
-  color: #8a8d8d;
-}
-
-.colorscheme-r5y7 .gray-bg, .colorscheme-r5y7 nav.contact, .colorscheme-r5y7.gray-bg, nav.colorscheme-r5y7.contact {
-  background-color: #8a8d8d;
-}
-
-.colorscheme-r5y7 .gray-border, .colorscheme-r5y7.gray-border {
-  border-color: #8a8d8d;
-}
-
-.colorscheme-r5y7 .gray-color-darker, .colorscheme-r5y7.gray-color-darker {
-  color: #3e4040;
-}
-
-.colorscheme-r5y7 .gray-bg-darker, .colorscheme-r5y7.gray-bg-darker {
-  background-color: #3e4040;
-}
-
-.colorscheme-r5y7 .gray-border-darker, .colorscheme-r5y7.gray-border-darker {
-  border-color: #3e4040;
-}
-
-.colorscheme-r5y7 .gray-color-lighter, .colorscheme-r5y7.gray-color-lighter {
-  color: #d7d9d9;
-}
-
-.colorscheme-r5y7 .gray-bg-lighter, .colorscheme-r5y7.gray-bg-lighter {
-  background-color: #d7d9d9;
-}
-
-.colorscheme-r5y7 .gray-border-lighter, .colorscheme-r5y7.gray-border-lighter {
-  border-color: #d7d9d9;
+  border-color: #404144;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-color, .colorscheme-los-angeles-bicycle-festival h1, .colorscheme-los-angeles-bicycle-festival h2, .colorscheme-los-angeles-bicycle-festival h3, .colorscheme-los-angeles-bicycle-festival h4, .colorscheme-los-angeles-bicycle-festival h5, .colorscheme-los-angeles-bicycle-festival h6, .colorscheme-los-angeles-bicycle-festival a, .colorscheme-los-angeles-bicycle-festival.primary-color, h1.colorscheme-los-angeles-bicycle-festival, h2.colorscheme-los-angeles-bicycle-festival, h3.colorscheme-los-angeles-bicycle-festival, h4.colorscheme-los-angeles-bicycle-festival, h5.colorscheme-los-angeles-bicycle-festival, h6.colorscheme-los-angeles-bicycle-festival, a.colorscheme-los-angeles-bicycle-festival {
@@ -7798,27 +7814,63 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-color-darker, .colorscheme-los-angeles-bicycle-festival.primary-color-darker {
-  color: #63072d;
+  color: #c20e59;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-bg-darker, .colorscheme-los-angeles-bicycle-festival.primary-bg-darker {
-  background-color: #63072d;
+  background-color: #c20e59;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-border-darker, .colorscheme-los-angeles-bicycle-festival.primary-border-darker {
-  border-color: #63072d;
+  border-color: #c20e59;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-color-lighter, .colorscheme-los-angeles-bicycle-festival.primary-color-lighter {
-  color: #f8a4c7;
+  color: #f1458c;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-bg-lighter, .colorscheme-los-angeles-bicycle-festival.primary-bg-lighter {
-  background-color: #f8a4c7;
+  background-color: #f1458c;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-border-lighter, .colorscheme-los-angeles-bicycle-festival.primary-border-lighter {
-  border-color: #f8a4c7;
+  border-color: #f1458c;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-color, .colorscheme-los-angeles-bicycle-festival section.single h1.page-title, section.single .colorscheme-los-angeles-bicycle-festival h1.page-title, .colorscheme-los-angeles-bicycle-festival.title-color, section.single h1.colorscheme-los-angeles-bicycle-festival.page-title {
+  color: #ee156f;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-bg, .colorscheme-los-angeles-bicycle-festival.title-bg {
+  background-color: #ee156f;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-border, .colorscheme-los-angeles-bicycle-festival.title-border {
+  border-color: #ee156f;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-color-darker, .colorscheme-los-angeles-bicycle-festival.title-color-darker {
+  color: #c20e59;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-bg-darker, .colorscheme-los-angeles-bicycle-festival.title-bg-darker {
+  background-color: #c20e59;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-border-darker, .colorscheme-los-angeles-bicycle-festival.title-border-darker {
+  border-color: #c20e59;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-color-lighter, .colorscheme-los-angeles-bicycle-festival.title-color-lighter {
+  color: #f1458c;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-bg-lighter, .colorscheme-los-angeles-bicycle-festival.title-bg-lighter {
+  background-color: #f1458c;
+}
+
+.colorscheme-los-angeles-bicycle-festival .title-border-lighter, .colorscheme-los-angeles-bicycle-festival.title-border-lighter {
+  border-color: #f1458c;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-color, .colorscheme-los-angeles-bicycle-festival.accent-color {
@@ -7834,27 +7886,27 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-color-darker, .colorscheme-los-angeles-bicycle-festival.accent-color-darker {
-  color: #28776f;
+  color: #45c0b4;
 }
 
-.colorscheme-los-angeles-bicycle-festival .accent-bg-darker, .colorscheme-los-angeles-bicycle-festival.accent-bg-darker {
-  background-color: #28776f;
+.colorscheme-los-angeles-bicycle-festival .accent-bg-darker, .colorscheme-los-angeles-bicycle-festival nav.main li a:hover, nav.main li .colorscheme-los-angeles-bicycle-festival a:hover, .colorscheme-los-angeles-bicycle-festival nav.main li.current-menu-item, nav.main .colorscheme-los-angeles-bicycle-festival li.current-menu-item, .colorscheme-los-angeles-bicycle-festival nav.main li.current-page-ancestor, nav.main .colorscheme-los-angeles-bicycle-festival li.current-page-ancestor, .colorscheme-los-angeles-bicycle-festival.accent-bg-darker, nav.main li a.colorscheme-los-angeles-bicycle-festival:hover, nav.main li.colorscheme-los-angeles-bicycle-festival.current-menu-item, nav.main li.colorscheme-los-angeles-bicycle-festival.current-page-ancestor {
+  background-color: #45c0b4;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-border-darker, .colorscheme-los-angeles-bicycle-festival.accent-border-darker {
-  border-color: #28776f;
+  border-color: #45c0b4;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-color-lighter, .colorscheme-los-angeles-bicycle-festival.accent-color-lighter {
-  color: #ddf4f1;
+  color: #91dad2;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-bg-lighter, .colorscheme-los-angeles-bicycle-festival.accent-bg-lighter {
-  background-color: #ddf4f1;
+  background-color: #91dad2;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-border-lighter, .colorscheme-los-angeles-bicycle-festival.accent-border-lighter {
-  border-color: #ddf4f1;
+  border-color: #91dad2;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-color, .colorscheme-los-angeles-bicycle-festival.outer-color {
@@ -7870,63 +7922,27 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-color-darker, .colorscheme-los-angeles-bicycle-festival.outer-color-darker {
-  color: #63072d;
+  color: #c20e59;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-bg-darker, .colorscheme-los-angeles-bicycle-festival.outer-bg-darker {
-  background-color: #63072d;
+  background-color: #c20e59;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-border-darker, .colorscheme-los-angeles-bicycle-festival.outer-border-darker {
-  border-color: #63072d;
+  border-color: #c20e59;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-color-lighter, .colorscheme-los-angeles-bicycle-festival.outer-color-lighter {
-  color: #f8a4c7;
+  color: #f1458c;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-bg-lighter, .colorscheme-los-angeles-bicycle-festival.outer-bg-lighter {
-  background-color: #f8a4c7;
+  background-color: #f1458c;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-border-lighter, .colorscheme-los-angeles-bicycle-festival.outer-border-lighter {
-  border-color: #f8a4c7;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-color, .colorscheme-los-angeles-bicycle-festival.gray-color {
-  color: #8a8d8d;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-bg, .colorscheme-los-angeles-bicycle-festival nav.contact, .colorscheme-los-angeles-bicycle-festival.gray-bg, nav.colorscheme-los-angeles-bicycle-festival.contact {
-  background-color: #8a8d8d;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-border, .colorscheme-los-angeles-bicycle-festival.gray-border {
-  border-color: #8a8d8d;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-color-darker, .colorscheme-los-angeles-bicycle-festival.gray-color-darker {
-  color: #3e4040;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-bg-darker, .colorscheme-los-angeles-bicycle-festival.gray-bg-darker {
-  background-color: #3e4040;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-border-darker, .colorscheme-los-angeles-bicycle-festival.gray-border-darker {
-  border-color: #3e4040;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-color-lighter, .colorscheme-los-angeles-bicycle-festival.gray-color-lighter {
-  color: #d7d9d9;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-bg-lighter, .colorscheme-los-angeles-bicycle-festival.gray-bg-lighter {
-  background-color: #d7d9d9;
-}
-
-.colorscheme-los-angeles-bicycle-festival .gray-border-lighter, .colorscheme-los-angeles-bicycle-festival.gray-border-lighter {
-  border-color: #d7d9d9;
+  border-color: #f1458c;
 }
 
 html, body {
@@ -7960,6 +7976,7 @@ a:hover {
 
 nav.main {
   color: white;
+  padding: 0;
 }
 nav.main ul {
   line-height: 2.5em;
@@ -7972,6 +7989,7 @@ nav.main li {
   height: 2.5em;
   text-align: center;
   position: relative;
+  padding: 0;
 }
 nav.main li a {
   font-weight: 700;
@@ -7982,12 +8000,10 @@ nav.main li a {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 0em;
+  line-height: 2.5em;
 }
-nav.main li a:hover {
-  padding-bottom: 0.2em;
+nav.main li a:hover, nav.main li.current-menu-item, nav.main li.current-page-ancestor {
+  line-height: 2em;
 }
 
 .container, section.single {
@@ -8032,9 +8048,10 @@ body > header .widget {
 }
 
 nav.contact {
+  background-color: #8a8d8d;
   height: 2em;
   line-height: 2em;
-  box-shadow: 0 0 4em 2em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6em 3em rgba(0, 0, 0, 0.2);
 }
 nav.contact:after {
   content: ' ';
@@ -8064,19 +8081,111 @@ nav.contact .menu > .menu-item:first-child {
   margin-left: 0;
 }
 
+.aspect-image {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section.single {
   min-height: 50%;
+  padding-bottom: 5em;
 }
 section.single h1.page-title {
-  font-family: 'futura-pt', sans-serif;
-  font-weight: 500;
+  font-family: 'omnes-pro', sans-serif;
+  font-weight: 600;
+  font-weight: 400;
+  margin: 2rem 0;
+  padding: 0;
+}
+section.single h1.featured-image {
+  position: relative;
+}
+section.single h1.featured-image .scaled-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 0px;
+  padding-bottom: 45%;
+}
+section.single h1.featured-image span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+  background: white;
+  padding: 0 1em 0.5em 2em;
+  min-width: 9em;
+  border-radius: 0 0 0.5em 0;
+}
+section.single .page-subnav {
+  margin: 2rem 0;
+}
+section.single .page-subnav ul {
+  padding: 0;
+  margin: 0;
+}
+section.single .page-subnav li {
+  list-style: none;
+  position: relative;
+}
+section.single .page-subnav li.current_page_item a {
+  color: inherit;
+}
+section.single .page-subnav li.current_page_item::before {
+  content: '\25b6';
+  display: block;
+  position: absolute;
+  line-height: 2.3rem;
+  font-size: 0.5em;
+  left: -1rem;
+  top: 0;
 }
 section.single article {
   padding: 0 2em;
-  margin-bottom: 5em;
+}
+section.single article p {
+  margin: 1em 0;
 }
 section.single article.the-missing {
   text-align: center;
+}
+
+ul.projects-widget {
+  padding: 0;
+  margin: 25px 0 0;
+  line-height: 70px;
+}
+ul.projects-widget li {
+  height: 70px;
+  list-style: none;
+  text-align: center;
+  padding: 0 0.5em;
+  vertical-align: middle;
+}
+ul.projects-widget a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+ul.projects-widget a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+ul.projects-widget a img.logo-color {
+  display: none;
+}
+ul.projects-widget a img.logo-grayscale {
+  display: inline-block;
+}
+ul.projects-widget li.active a img.logo-color, ul.projects-widget a:hover img.logo-color {
+  display: inline-block;
+}
+ul.projects-widget li.active a img.logo-grayscale, ul.projects-widget a:hover img.logo-grayscale {
+  display: none;
 }
 
 /* Custom Project Files */

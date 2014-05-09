@@ -1,6 +1,7 @@
 <?php
 
 require_once get_template_directory() . '/inc/init.php';
+require_once get_template_directory() . '/inc/projects-widget.php';
 require_once get_template_directory() . '/inc/assets.php';
 require_once get_template_directory() . '/inc/content-functions.php';
 
@@ -41,3 +42,12 @@ function bci_customize_register($wp_customize) {
 }
 
 add_action('customize_register', 'bci_customize_register');
+
+
+// register widgets
+
+function register_theme_widgets() {
+  register_widget('Project_Logos_Widget');
+}
+
+add_action('widgets_init', 'register_theme_widgets');

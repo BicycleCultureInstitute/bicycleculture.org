@@ -15,9 +15,14 @@ echo '<section class="single projects-list">';
     echo '<article>';
 
     theTitle();
+
+    echo '<div class="clearfix"></div>';
+
     the_content();
 
     echo '</article>';
+
+    theSubnav();
 
   endwhile; else: 
 

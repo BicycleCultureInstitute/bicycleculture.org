@@ -1,6 +1,6 @@
 <?php
 /*
-*
+* Default Page
 */
 get_header();
 
@@ -12,9 +12,14 @@ echo '<section class="single">';
     echo '<article>';
 
     theTitle();
+
+    echo '<div class="clearfix"></div>';
+
     the_content();
 
     echo '</article>';
+
+    theSubnav();
 
   endwhile; else: 
 

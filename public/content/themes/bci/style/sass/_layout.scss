@@ -23,6 +23,7 @@ a {
 nav.main {
   @extend .accent-bg;
   color: $white;
+  padding: 0;
 
   ul {
     line-height: 2.5em;
@@ -32,13 +33,14 @@ nav.main {
   }
   li {
     list-style: none;
-    @extend .col-md-2;
+    @extend .col-sm-2;
     height: 2.5em;
     text-align: center;
     position: relative;
+    padding: 0;
 
     &:first-child {
-      @extend .col-md-offset-1;
+      @extend .col-sm-offset-1;
     }
 
     a {
@@ -48,13 +50,13 @@ nav.main {
       width: 100%;
       height: 100%;
       @include box-sizing(content-box);
-      position: absolute;
-      bottom: 0;
-      padding-bottom: 0em;
+      line-height: 2.5em;
 
-      &:hover {
-        padding-bottom: 0.2em;
-      }
+    }
+
+    & a:hover, &.current-menu-item, &.current-page-ancestor {
+      line-height: 2em;
+      @extend .accent-bg-darker;
     }
   }
 }
@@ -71,7 +73,7 @@ body > header {
 
   h1 {
     @include logo;
-    @extend .col-md-2;
+    @extend .col-sm-2;
     padding: 0;
     margin: 0;
     a {
@@ -99,26 +101,26 @@ body > header {
 
   .header-widgets {
     padding: 0;
-    @extend .col-md-10;
+    @extend .col-sm-10;
   }
 
   .widget {
     float: right;
-    @extend .col-md-4;
+    @extend .col-sm-4;
   }
 
   .menu-projects-container li {
-    @extend .col-md-4;
+    @extend .col-sm-4;
   }
 
 }
 
 nav.contact {
   @include float-block;
-  @extend .gray-bg;
+  background-color: $aluminum;
   height: 2em;
   line-height: 2em;
-  box-shadow: 0 0 4em 2em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6em 3em rgba(0, 0, 0, 0.2);
 
   ul, li {
     list-style: none;
@@ -152,17 +154,87 @@ nav.contact .menu {
   }
 
 }
+
+.aspect-image {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 section.single {
   @extend .container;
   min-height: 50%;
+  padding-bottom: 5em;
 
   h1.page-title {
-    @include headline;
+    @include logo;
+    font-weight: 400;
+    @extend .title-color;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  h1.featured-image {
+    position: relative;
+
+    .scaled-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 0px;
+      padding-bottom: 45%;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      z-index: 1;
+      background: $white;
+      padding: 0 1em 0.5em 2em;
+      min-width: 9em;
+      border-radius: 0 0 0.5em 0;
+    }
+  }
+
+  .page-subnav {
+    margin: 2rem 0;
+    @extend .col-sm-3;
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      list-style: none;
+      position: relative;
+
+      &.current_page_item {
+        a {
+          color: inherit;
+        }
+
+        &::before {
+          content: '\25b6';
+          display: block;
+          position: absolute;
+          line-height: 2.3rem;
+          font-size: 0.5em;
+          left: -1rem;
+          top: 0;
+        }
+      }
+    }
   }
 
   article {
+    @extend .col-sm-9;
     padding: 0 2em;
-    margin-bottom: 5em;
+
+    p {
+      margin: 1em 0;
+    }
   }
 
   article.the-missing {

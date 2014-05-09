@@ -1,4 +1,6 @@
 <?php
+global $project_slug;
+
 $project_slug = preg_replace('/^\/projects\/([^\/]+).*/', '$1', $_SERVER['REQUEST_URI']);
 if (!$project_slug || $project_slug == $_SERVER['REQUEST_URI'])
   $project_slug = 'bci';
