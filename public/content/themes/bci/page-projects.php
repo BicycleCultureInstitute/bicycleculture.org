@@ -2,6 +2,9 @@
 /*
 * Page: Projects
 */
+
+$body_classes = array('colorscheme-'.$post->post_name);
+
 get_header();
 
 echo '<section class="single projects-list">';

@@ -1,3 +1,9 @@
+<?php
+$project_slug = preg_replace('/^\/projects\/([^\/]+).*/', '$1', $_SERVER['REQUEST_URI']);
+if (!$project_slug || $project_slug == $_SERVER['REQUEST_URI'])
+  $project_slug = 'bci';
+$body_classes = array('colorscheme-'.$project_slug);
+?>
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -21,7 +27,7 @@
 
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(array('colorscheme-festival')); ?>>
+<body <?php body_class($body_classes); ?>>
   <header class="container">
     <nav class="contact">
       <?php wp_nav_menu(array('theme_location' => 'contact')); ?>

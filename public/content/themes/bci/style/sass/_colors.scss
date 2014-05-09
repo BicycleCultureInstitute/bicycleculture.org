@@ -39,11 +39,11 @@ $colors:
 }
 
 $colorSchemes:
-  //          , primary     , accent        , background , gray
-  ('bci'      , $cobalt     , $bermuda      , $concrete  , $concrete),
-  ('labt'     , $green      , $bitter_lemon , $aluminum  , $concrete),
-  ('r5y7'     , $orange_red , $orange_red   , $cobalt    , $concrete),
-  ('festival' , $magenta    , $teal         , $magenta   , $concrete)
+  //                              , primary     , accent        , background , gray
+  ('bicycle-culture-institute'    , $cobalt     , $bermuda      , $concrete  , $concrete),
+  ('l-a-bike-trains'              , $green      , $bitter_lemon , $aluminum  , $concrete),
+  ('r5y7'                         , $orange_red , $orange_red   , $cobalt    , $concrete),
+  ('los-angeles-bicycle-festival' , $magenta    , $teal         , $magenta   , $concrete)
 ;
 
 @each $set in $colorSchemes {
