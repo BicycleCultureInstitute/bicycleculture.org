@@ -12,8 +12,12 @@ echo '<section class="single projects-list">';
 
   if(have_posts()) : while(have_posts()) : the_post();
 
+    echo '<article>';
+
     theTitle();
     the_content();
+
+    echo '</article>';
 
   endwhile; else: 
 

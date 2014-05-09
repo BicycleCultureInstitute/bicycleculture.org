@@ -10,7 +10,7 @@
 // Page Titles
 function theTitle() {
 
-  echo '<div class="container"><h1 class="page-title">';
+  echo '<h1 class="page-title">';
 
   if (get_field('title_type') === 'text') {
     $subTitle = get_field('title_text');
@@ -23,7 +23,7 @@ function theTitle() {
     echo $defaultTitle;
   }
 
-  echo '</h1></div>';
+  echo '</h1>';
 
 }
 

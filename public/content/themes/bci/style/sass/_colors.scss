@@ -13,6 +13,7 @@ $nero         : #27282A;
 $aluminum     : #8A8D8D;
 $concrete     : #C2C3C1;
 $white_smoke  : #E9E9E9;
+$black        : #000000;
 $white        : #FFFFFF;
 
 $colors:
@@ -28,6 +29,7 @@ $colors:
   'aluminum'     $aluminum,
   'concrete'     $concrete,
   'white_smoke'  $white_smoke,
+  'black'        $black,
   'white'        $white
 ;
 
@@ -40,12 +42,15 @@ $colors:
 
 $colorSchemeParts:                 'primary'     'accent'        'outer'       'gray';
 $colorSchemes:
-  ('bci'                          , $cobalt     , $bermuda      , $concrete   , $concrete),
-  ('l-a-bike-trains'              , $green      , $bitter_lemon , $bermuda    , $concrete),
-  ('r5y7'                         , $orange_red , $orange_red   , $orange_red , $concrete),
-  ('los-angeles-bicycle-festival' , $magenta    , $teal         , $magenta    , $concrete)
+  ('bci'                          , $cobalt     , $bermuda      , $white_smoke, $aluminum),
+  ('l-a-bike-trains'              , $green      , $bitter_lemon , $bermuda    , $aluminum),
+  ('r5y7'                         , $orange_red , $orange_red   , $nero       , $aluminum),
+  ('los-angeles-bicycle-festival' , $magenta    , $teal         , $magenta    , $aluminum)
 ;
 
+@mixin colorscheme-pair($name, $part, $suffix, $property, $value) {
+  .colorscheme-#{$name} .#{$part}-#{$suffix}, .colorscheme-#{$name}.#{$part}-#{$suffix} { #{$property}: $value; }
+}
 @each $set in $colorSchemes {
   $name: nth($set, 1);
 
@@ -53,8 +58,16 @@ $colorSchemes:
     $part: nth($colorSchemeParts, $i - 1);
     $color: nth($set, $i);
 
-    .colorscheme-#{$name} .#{$part}-color , .colorscheme-#{$name}.#{$part}-color   { color: $color; }
-    .colorscheme-#{$name} .#{$part}-bg    , .colorscheme-#{$name}.#{$part}-bg      { background-color: $color; }
-    .colorscheme-#{$name} .#{$part}-border, .colorscheme-#{$name}.#{$part}-border  { border-color: $color; }
+    @include colorscheme-pair($name , $part , 'color'  , 'color'            , $color);
+    @include colorscheme-pair($name , $part , 'bg'     , 'background-color' , $color);
+    @include colorscheme-pair($name , $part , 'border' , 'border-color'     , $color);
+
+    @include colorscheme-pair($name , $part , 'color-darker'  , 'color'            , darken($color, 30%));
+    @include colorscheme-pair($name , $part , 'bg-darker'     , 'background-color' , darken($color, 30%));
+    @include colorscheme-pair($name , $part , 'border-darker' , 'border-color'     , darken($color, 30%));
+
+    @include colorscheme-pair($name , $part , 'color-lighter'  , 'color'            , lighten($color, 30%));
+    @include colorscheme-pair($name , $part , 'bg-lighter'     , 'background-color' , lighten($color, 30%));
+    @include colorscheme-pair($name , $part , 'border-lighter' , 'border-color'     , lighten($color, 30%));
   }
 }

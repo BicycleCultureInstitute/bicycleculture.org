@@ -1142,7 +1142,7 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, nav.main li, body > header h1, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, body > header .widget, body > header .menu-projects-container li, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, body > header .header-widgets, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1567,7 +1567,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, nav.main li, body > header h1, .col-md-3, .col-md-4, body > header .widget, body > header .menu-projects-container li, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, body > header .header-widgets, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -1579,7 +1579,7 @@ pre code {
     width: 91.66666667%;
   }
 
-  .col-md-10 {
+  .col-md-10, body > header .header-widgets {
     width: 83.33333333%;
   }
 
@@ -1603,7 +1603,7 @@ pre code {
     width: 41.66666667%;
   }
 
-  .col-md-4 {
+  .col-md-4, body > header .widget, body > header .menu-projects-container li {
     width: 33.33333333%;
   }
 
@@ -1611,7 +1611,7 @@ pre code {
     width: 25%;
   }
 
-  .col-md-2 {
+  .col-md-2, nav.main li, body > header h1 {
     width: 16.66666667%;
   }
 
@@ -1767,7 +1767,7 @@ pre code {
     margin-left: 16.66666667%;
   }
 
-  .col-md-offset-1 {
+  .col-md-offset-1, nav.main li:first-child {
     margin-left: 8.33333333%;
   }
 
@@ -7337,6 +7337,14 @@ body {
   background-color: #e9e9e9;
 }
 
+.black {
+  color: black;
+}
+
+.bg-black {
+  background-color: black;
+}
+
 .white {
   color: white;
 }
@@ -7345,7 +7353,7 @@ body {
   background-color: white;
 }
 
-.colorscheme-bci .primary-color, .colorscheme-bci h1, .colorscheme-bci h2, .colorscheme-bci h3, .colorscheme-bci h4, .colorscheme-bci h5, .colorscheme-bci h6, .colorscheme-bci.primary-color, h1.colorscheme-bci, h2.colorscheme-bci, h3.colorscheme-bci, h4.colorscheme-bci, h5.colorscheme-bci, h6.colorscheme-bci {
+.colorscheme-bci .primary-color, .colorscheme-bci h1, .colorscheme-bci h2, .colorscheme-bci h3, .colorscheme-bci h4, .colorscheme-bci h5, .colorscheme-bci h6, .colorscheme-bci a, .colorscheme-bci.primary-color, h1.colorscheme-bci, h2.colorscheme-bci, h3.colorscheme-bci, h4.colorscheme-bci, h5.colorscheme-bci, h6.colorscheme-bci, a.colorscheme-bci {
   color: #243e65;
 }
 
@@ -7357,6 +7365,30 @@ body {
   border-color: #243e65;
 }
 
+.colorscheme-bci .primary-color-darker, .colorscheme-bci.primary-color-darker {
+  color: black;
+}
+
+.colorscheme-bci .primary-bg-darker, .colorscheme-bci.primary-bg-darker {
+  background-color: black;
+}
+
+.colorscheme-bci .primary-border-darker, .colorscheme-bci.primary-border-darker {
+  border-color: black;
+}
+
+.colorscheme-bci .primary-color-lighter, .colorscheme-bci.primary-color-lighter {
+  color: #5d87c5;
+}
+
+.colorscheme-bci .primary-bg-lighter, .colorscheme-bci.primary-bg-lighter {
+  background-color: #5d87c5;
+}
+
+.colorscheme-bci .primary-border-lighter, .colorscheme-bci.primary-border-lighter {
+  border-color: #5d87c5;
+}
+
 .colorscheme-bci .accent-color, .colorscheme-bci.accent-color {
   color: #61849c;
 }
@@ -7365,35 +7397,107 @@ body {
   background-color: #61849c;
 }
 
-.colorscheme-bci .accent-border, .colorscheme-bci body > header, .colorscheme-bci.accent-border, body > header.colorscheme-bci {
+.colorscheme-bci .accent-border, .colorscheme-bci.accent-border {
   border-color: #61849c;
 }
 
+.colorscheme-bci .accent-color-darker, .colorscheme-bci.accent-color-darker {
+  color: #26343e;
+}
+
+.colorscheme-bci .accent-bg-darker, .colorscheme-bci.accent-bg-darker {
+  background-color: #26343e;
+}
+
+.colorscheme-bci .accent-border-darker, .colorscheme-bci.accent-border-darker {
+  border-color: #26343e;
+}
+
+.colorscheme-bci .accent-color-lighter, .colorscheme-bci.accent-color-lighter {
+  color: #bfcdd7;
+}
+
+.colorscheme-bci .accent-bg-lighter, .colorscheme-bci.accent-bg-lighter {
+  background-color: #bfcdd7;
+}
+
+.colorscheme-bci .accent-border-lighter, .colorscheme-bci.accent-border-lighter {
+  border-color: #bfcdd7;
+}
+
 .colorscheme-bci .outer-color, .colorscheme-bci.outer-color {
-  color: #c2c3c1;
+  color: #e9e9e9;
 }
 
 .colorscheme-bci .outer-bg, .colorscheme-bci body, .colorscheme-bci.outer-bg, body.colorscheme-bci {
-  background-color: #c2c3c1;
+  background-color: #e9e9e9;
 }
 
 .colorscheme-bci .outer-border, .colorscheme-bci.outer-border {
-  border-color: #c2c3c1;
+  border-color: #e9e9e9;
+}
+
+.colorscheme-bci .outer-color-darker, .colorscheme-bci.outer-color-darker {
+  color: #9d9d9d;
+}
+
+.colorscheme-bci .outer-bg-darker, .colorscheme-bci.outer-bg-darker {
+  background-color: #9d9d9d;
+}
+
+.colorscheme-bci .outer-border-darker, .colorscheme-bci.outer-border-darker {
+  border-color: #9d9d9d;
+}
+
+.colorscheme-bci .outer-color-lighter, .colorscheme-bci.outer-color-lighter {
+  color: white;
+}
+
+.colorscheme-bci .outer-bg-lighter, .colorscheme-bci.outer-bg-lighter {
+  background-color: white;
+}
+
+.colorscheme-bci .outer-border-lighter, .colorscheme-bci.outer-border-lighter {
+  border-color: white;
 }
 
 .colorscheme-bci .gray-color, .colorscheme-bci.gray-color {
-  color: #c2c3c1;
+  color: #8a8d8d;
 }
 
-.colorscheme-bci .gray-bg, .colorscheme-bci nav, .colorscheme-bci.gray-bg, nav.colorscheme-bci {
-  background-color: #c2c3c1;
+.colorscheme-bci .gray-bg, .colorscheme-bci nav.contact, .colorscheme-bci.gray-bg, nav.colorscheme-bci.contact {
+  background-color: #8a8d8d;
 }
 
 .colorscheme-bci .gray-border, .colorscheme-bci.gray-border {
-  border-color: #c2c3c1;
+  border-color: #8a8d8d;
 }
 
-.colorscheme-l-a-bike-trains .primary-color, .colorscheme-l-a-bike-trains h1, .colorscheme-l-a-bike-trains h2, .colorscheme-l-a-bike-trains h3, .colorscheme-l-a-bike-trains h4, .colorscheme-l-a-bike-trains h5, .colorscheme-l-a-bike-trains h6, .colorscheme-l-a-bike-trains.primary-color, h1.colorscheme-l-a-bike-trains, h2.colorscheme-l-a-bike-trains, h3.colorscheme-l-a-bike-trains, h4.colorscheme-l-a-bike-trains, h5.colorscheme-l-a-bike-trains, h6.colorscheme-l-a-bike-trains {
+.colorscheme-bci .gray-color-darker, .colorscheme-bci.gray-color-darker {
+  color: #3e4040;
+}
+
+.colorscheme-bci .gray-bg-darker, .colorscheme-bci.gray-bg-darker {
+  background-color: #3e4040;
+}
+
+.colorscheme-bci .gray-border-darker, .colorscheme-bci.gray-border-darker {
+  border-color: #3e4040;
+}
+
+.colorscheme-bci .gray-color-lighter, .colorscheme-bci.gray-color-lighter {
+  color: #d7d9d9;
+}
+
+.colorscheme-bci .gray-bg-lighter, .colorscheme-bci.gray-bg-lighter {
+  background-color: #d7d9d9;
+}
+
+.colorscheme-bci .gray-border-lighter, .colorscheme-bci.gray-border-lighter {
+  border-color: #d7d9d9;
+}
+
+.colorscheme-l-a-bike-trains .primary-color, .colorscheme-l-a-bike-trains h1, .colorscheme-l-a-bike-trains h2, .colorscheme-l-a-bike-trains h3, .colorscheme-l-a-bike-trains h4, .colorscheme-l-a-bike-trains h5, .colorscheme-l-a-bike-trains h6, .colorscheme-l-a-bike-trains a, .colorscheme-l-a-bike-trains.primary-color, h1.colorscheme-l-a-bike-trains, h2.colorscheme-l-a-bike-trains, h3.colorscheme-l-a-bike-trains, h4.colorscheme-l-a-bike-trains, h5.colorscheme-l-a-bike-trains, h6.colorscheme-l-a-bike-trains, a.colorscheme-l-a-bike-trains {
   color: #6ec72d;
 }
 
@@ -7405,6 +7509,30 @@ body {
   border-color: #6ec72d;
 }
 
+.colorscheme-l-a-bike-trains .primary-color-darker, .colorscheme-l-a-bike-trains.primary-color-darker {
+  color: #294a11;
+}
+
+.colorscheme-l-a-bike-trains .primary-bg-darker, .colorscheme-l-a-bike-trains.primary-bg-darker {
+  background-color: #294a11;
+}
+
+.colorscheme-l-a-bike-trains .primary-border-darker, .colorscheme-l-a-bike-trains.primary-border-darker {
+  border-color: #294a11;
+}
+
+.colorscheme-l-a-bike-trains .primary-color-lighter, .colorscheme-l-a-bike-trains.primary-color-lighter {
+  color: #c1eaa3;
+}
+
+.colorscheme-l-a-bike-trains .primary-bg-lighter, .colorscheme-l-a-bike-trains.primary-bg-lighter {
+  background-color: #c1eaa3;
+}
+
+.colorscheme-l-a-bike-trains .primary-border-lighter, .colorscheme-l-a-bike-trains.primary-border-lighter {
+  border-color: #c1eaa3;
+}
+
 .colorscheme-l-a-bike-trains .accent-color, .colorscheme-l-a-bike-trains.accent-color {
   color: #cfd407;
 }
@@ -7413,8 +7541,32 @@ body {
   background-color: #cfd407;
 }
 
-.colorscheme-l-a-bike-trains .accent-border, .colorscheme-l-a-bike-trains body > header, .colorscheme-l-a-bike-trains.accent-border, body > header.colorscheme-l-a-bike-trains {
+.colorscheme-l-a-bike-trains .accent-border, .colorscheme-l-a-bike-trains.accent-border {
   border-color: #cfd407;
+}
+
+.colorscheme-l-a-bike-trains .accent-color-darker, .colorscheme-l-a-bike-trains.accent-color-darker {
+  color: #3e4002;
+}
+
+.colorscheme-l-a-bike-trains .accent-bg-darker, .colorscheme-l-a-bike-trains.accent-bg-darker {
+  background-color: #3e4002;
+}
+
+.colorscheme-l-a-bike-trains .accent-border-darker, .colorscheme-l-a-bike-trains.accent-border-darker {
+  border-color: #3e4002;
+}
+
+.colorscheme-l-a-bike-trains .accent-color-lighter, .colorscheme-l-a-bike-trains.accent-color-lighter {
+  color: #f7fb79;
+}
+
+.colorscheme-l-a-bike-trains .accent-bg-lighter, .colorscheme-l-a-bike-trains.accent-bg-lighter {
+  background-color: #f7fb79;
+}
+
+.colorscheme-l-a-bike-trains .accent-border-lighter, .colorscheme-l-a-bike-trains.accent-border-lighter {
+  border-color: #f7fb79;
 }
 
 .colorscheme-l-a-bike-trains .outer-color, .colorscheme-l-a-bike-trains.outer-color {
@@ -7429,19 +7581,67 @@ body {
   border-color: #61849c;
 }
 
-.colorscheme-l-a-bike-trains .gray-color, .colorscheme-l-a-bike-trains.gray-color {
-  color: #c2c3c1;
+.colorscheme-l-a-bike-trains .outer-color-darker, .colorscheme-l-a-bike-trains.outer-color-darker {
+  color: #26343e;
 }
 
-.colorscheme-l-a-bike-trains .gray-bg, .colorscheme-l-a-bike-trains nav, .colorscheme-l-a-bike-trains.gray-bg, nav.colorscheme-l-a-bike-trains {
-  background-color: #c2c3c1;
+.colorscheme-l-a-bike-trains .outer-bg-darker, .colorscheme-l-a-bike-trains.outer-bg-darker {
+  background-color: #26343e;
+}
+
+.colorscheme-l-a-bike-trains .outer-border-darker, .colorscheme-l-a-bike-trains.outer-border-darker {
+  border-color: #26343e;
+}
+
+.colorscheme-l-a-bike-trains .outer-color-lighter, .colorscheme-l-a-bike-trains.outer-color-lighter {
+  color: #bfcdd7;
+}
+
+.colorscheme-l-a-bike-trains .outer-bg-lighter, .colorscheme-l-a-bike-trains.outer-bg-lighter {
+  background-color: #bfcdd7;
+}
+
+.colorscheme-l-a-bike-trains .outer-border-lighter, .colorscheme-l-a-bike-trains.outer-border-lighter {
+  border-color: #bfcdd7;
+}
+
+.colorscheme-l-a-bike-trains .gray-color, .colorscheme-l-a-bike-trains.gray-color {
+  color: #8a8d8d;
+}
+
+.colorscheme-l-a-bike-trains .gray-bg, .colorscheme-l-a-bike-trains nav.contact, .colorscheme-l-a-bike-trains.gray-bg, nav.colorscheme-l-a-bike-trains.contact {
+  background-color: #8a8d8d;
 }
 
 .colorscheme-l-a-bike-trains .gray-border, .colorscheme-l-a-bike-trains.gray-border {
-  border-color: #c2c3c1;
+  border-color: #8a8d8d;
 }
 
-.colorscheme-r5y7 .primary-color, .colorscheme-r5y7 h1, .colorscheme-r5y7 h2, .colorscheme-r5y7 h3, .colorscheme-r5y7 h4, .colorscheme-r5y7 h5, .colorscheme-r5y7 h6, .colorscheme-r5y7.primary-color, h1.colorscheme-r5y7, h2.colorscheme-r5y7, h3.colorscheme-r5y7, h4.colorscheme-r5y7, h5.colorscheme-r5y7, h6.colorscheme-r5y7 {
+.colorscheme-l-a-bike-trains .gray-color-darker, .colorscheme-l-a-bike-trains.gray-color-darker {
+  color: #3e4040;
+}
+
+.colorscheme-l-a-bike-trains .gray-bg-darker, .colorscheme-l-a-bike-trains.gray-bg-darker {
+  background-color: #3e4040;
+}
+
+.colorscheme-l-a-bike-trains .gray-border-darker, .colorscheme-l-a-bike-trains.gray-border-darker {
+  border-color: #3e4040;
+}
+
+.colorscheme-l-a-bike-trains .gray-color-lighter, .colorscheme-l-a-bike-trains.gray-color-lighter {
+  color: #d7d9d9;
+}
+
+.colorscheme-l-a-bike-trains .gray-bg-lighter, .colorscheme-l-a-bike-trains.gray-bg-lighter {
+  background-color: #d7d9d9;
+}
+
+.colorscheme-l-a-bike-trains .gray-border-lighter, .colorscheme-l-a-bike-trains.gray-border-lighter {
+  border-color: #d7d9d9;
+}
+
+.colorscheme-r5y7 .primary-color, .colorscheme-r5y7 h1, .colorscheme-r5y7 h2, .colorscheme-r5y7 h3, .colorscheme-r5y7 h4, .colorscheme-r5y7 h5, .colorscheme-r5y7 h6, .colorscheme-r5y7 a, .colorscheme-r5y7.primary-color, h1.colorscheme-r5y7, h2.colorscheme-r5y7, h3.colorscheme-r5y7, h4.colorscheme-r5y7, h5.colorscheme-r5y7, h6.colorscheme-r5y7, a.colorscheme-r5y7 {
   color: #ef2921;
 }
 
@@ -7453,6 +7653,30 @@ body {
   border-color: #ef2921;
 }
 
+.colorscheme-r5y7 .primary-color-darker, .colorscheme-r5y7.primary-color-darker {
+  color: #6f0c08;
+}
+
+.colorscheme-r5y7 .primary-bg-darker, .colorscheme-r5y7.primary-bg-darker {
+  background-color: #6f0c08;
+}
+
+.colorscheme-r5y7 .primary-border-darker, .colorscheme-r5y7.primary-border-darker {
+  border-color: #6f0c08;
+}
+
+.colorscheme-r5y7 .primary-color-lighter, .colorscheme-r5y7.primary-color-lighter {
+  color: #f9b3b0;
+}
+
+.colorscheme-r5y7 .primary-bg-lighter, .colorscheme-r5y7.primary-bg-lighter {
+  background-color: #f9b3b0;
+}
+
+.colorscheme-r5y7 .primary-border-lighter, .colorscheme-r5y7.primary-border-lighter {
+  border-color: #f9b3b0;
+}
+
 .colorscheme-r5y7 .accent-color, .colorscheme-r5y7.accent-color {
   color: #ef2921;
 }
@@ -7461,35 +7685,107 @@ body {
   background-color: #ef2921;
 }
 
-.colorscheme-r5y7 .accent-border, .colorscheme-r5y7 body > header, .colorscheme-r5y7.accent-border, body > header.colorscheme-r5y7 {
+.colorscheme-r5y7 .accent-border, .colorscheme-r5y7.accent-border {
   border-color: #ef2921;
+}
+
+.colorscheme-r5y7 .accent-color-darker, .colorscheme-r5y7.accent-color-darker {
+  color: #6f0c08;
+}
+
+.colorscheme-r5y7 .accent-bg-darker, .colorscheme-r5y7.accent-bg-darker {
+  background-color: #6f0c08;
+}
+
+.colorscheme-r5y7 .accent-border-darker, .colorscheme-r5y7.accent-border-darker {
+  border-color: #6f0c08;
+}
+
+.colorscheme-r5y7 .accent-color-lighter, .colorscheme-r5y7.accent-color-lighter {
+  color: #f9b3b0;
+}
+
+.colorscheme-r5y7 .accent-bg-lighter, .colorscheme-r5y7.accent-bg-lighter {
+  background-color: #f9b3b0;
+}
+
+.colorscheme-r5y7 .accent-border-lighter, .colorscheme-r5y7.accent-border-lighter {
+  border-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .outer-color, .colorscheme-r5y7.outer-color {
-  color: #ef2921;
+  color: #27282a;
 }
 
 .colorscheme-r5y7 .outer-bg, .colorscheme-r5y7 body, .colorscheme-r5y7.outer-bg, body.colorscheme-r5y7 {
-  background-color: #ef2921;
+  background-color: #27282a;
 }
 
 .colorscheme-r5y7 .outer-border, .colorscheme-r5y7.outer-border {
-  border-color: #ef2921;
+  border-color: #27282a;
+}
+
+.colorscheme-r5y7 .outer-color-darker, .colorscheme-r5y7.outer-color-darker {
+  color: black;
+}
+
+.colorscheme-r5y7 .outer-bg-darker, .colorscheme-r5y7.outer-bg-darker {
+  background-color: black;
+}
+
+.colorscheme-r5y7 .outer-border-darker, .colorscheme-r5y7.outer-border-darker {
+  border-color: black;
+}
+
+.colorscheme-r5y7 .outer-color-lighter, .colorscheme-r5y7.outer-color-lighter {
+  color: #717479;
+}
+
+.colorscheme-r5y7 .outer-bg-lighter, .colorscheme-r5y7.outer-bg-lighter {
+  background-color: #717479;
+}
+
+.colorscheme-r5y7 .outer-border-lighter, .colorscheme-r5y7.outer-border-lighter {
+  border-color: #717479;
 }
 
 .colorscheme-r5y7 .gray-color, .colorscheme-r5y7.gray-color {
-  color: #c2c3c1;
+  color: #8a8d8d;
 }
 
-.colorscheme-r5y7 .gray-bg, .colorscheme-r5y7 nav, .colorscheme-r5y7.gray-bg, nav.colorscheme-r5y7 {
-  background-color: #c2c3c1;
+.colorscheme-r5y7 .gray-bg, .colorscheme-r5y7 nav.contact, .colorscheme-r5y7.gray-bg, nav.colorscheme-r5y7.contact {
+  background-color: #8a8d8d;
 }
 
 .colorscheme-r5y7 .gray-border, .colorscheme-r5y7.gray-border {
-  border-color: #c2c3c1;
+  border-color: #8a8d8d;
 }
 
-.colorscheme-los-angeles-bicycle-festival .primary-color, .colorscheme-los-angeles-bicycle-festival h1, .colorscheme-los-angeles-bicycle-festival h2, .colorscheme-los-angeles-bicycle-festival h3, .colorscheme-los-angeles-bicycle-festival h4, .colorscheme-los-angeles-bicycle-festival h5, .colorscheme-los-angeles-bicycle-festival h6, .colorscheme-los-angeles-bicycle-festival.primary-color, h1.colorscheme-los-angeles-bicycle-festival, h2.colorscheme-los-angeles-bicycle-festival, h3.colorscheme-los-angeles-bicycle-festival, h4.colorscheme-los-angeles-bicycle-festival, h5.colorscheme-los-angeles-bicycle-festival, h6.colorscheme-los-angeles-bicycle-festival {
+.colorscheme-r5y7 .gray-color-darker, .colorscheme-r5y7.gray-color-darker {
+  color: #3e4040;
+}
+
+.colorscheme-r5y7 .gray-bg-darker, .colorscheme-r5y7.gray-bg-darker {
+  background-color: #3e4040;
+}
+
+.colorscheme-r5y7 .gray-border-darker, .colorscheme-r5y7.gray-border-darker {
+  border-color: #3e4040;
+}
+
+.colorscheme-r5y7 .gray-color-lighter, .colorscheme-r5y7.gray-color-lighter {
+  color: #d7d9d9;
+}
+
+.colorscheme-r5y7 .gray-bg-lighter, .colorscheme-r5y7.gray-bg-lighter {
+  background-color: #d7d9d9;
+}
+
+.colorscheme-r5y7 .gray-border-lighter, .colorscheme-r5y7.gray-border-lighter {
+  border-color: #d7d9d9;
+}
+
+.colorscheme-los-angeles-bicycle-festival .primary-color, .colorscheme-los-angeles-bicycle-festival h1, .colorscheme-los-angeles-bicycle-festival h2, .colorscheme-los-angeles-bicycle-festival h3, .colorscheme-los-angeles-bicycle-festival h4, .colorscheme-los-angeles-bicycle-festival h5, .colorscheme-los-angeles-bicycle-festival h6, .colorscheme-los-angeles-bicycle-festival a, .colorscheme-los-angeles-bicycle-festival.primary-color, h1.colorscheme-los-angeles-bicycle-festival, h2.colorscheme-los-angeles-bicycle-festival, h3.colorscheme-los-angeles-bicycle-festival, h4.colorscheme-los-angeles-bicycle-festival, h5.colorscheme-los-angeles-bicycle-festival, h6.colorscheme-los-angeles-bicycle-festival, a.colorscheme-los-angeles-bicycle-festival {
   color: #ee156f;
 }
 
@@ -7501,6 +7797,30 @@ body {
   border-color: #ee156f;
 }
 
+.colorscheme-los-angeles-bicycle-festival .primary-color-darker, .colorscheme-los-angeles-bicycle-festival.primary-color-darker {
+  color: #63072d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .primary-bg-darker, .colorscheme-los-angeles-bicycle-festival.primary-bg-darker {
+  background-color: #63072d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .primary-border-darker, .colorscheme-los-angeles-bicycle-festival.primary-border-darker {
+  border-color: #63072d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .primary-color-lighter, .colorscheme-los-angeles-bicycle-festival.primary-color-lighter {
+  color: #f8a4c7;
+}
+
+.colorscheme-los-angeles-bicycle-festival .primary-bg-lighter, .colorscheme-los-angeles-bicycle-festival.primary-bg-lighter {
+  background-color: #f8a4c7;
+}
+
+.colorscheme-los-angeles-bicycle-festival .primary-border-lighter, .colorscheme-los-angeles-bicycle-festival.primary-border-lighter {
+  border-color: #f8a4c7;
+}
+
 .colorscheme-los-angeles-bicycle-festival .accent-color, .colorscheme-los-angeles-bicycle-festival.accent-color {
   color: #6bcdc3;
 }
@@ -7509,8 +7829,32 @@ body {
   background-color: #6bcdc3;
 }
 
-.colorscheme-los-angeles-bicycle-festival .accent-border, .colorscheme-los-angeles-bicycle-festival body > header, .colorscheme-los-angeles-bicycle-festival.accent-border, body > header.colorscheme-los-angeles-bicycle-festival {
+.colorscheme-los-angeles-bicycle-festival .accent-border, .colorscheme-los-angeles-bicycle-festival.accent-border {
   border-color: #6bcdc3;
+}
+
+.colorscheme-los-angeles-bicycle-festival .accent-color-darker, .colorscheme-los-angeles-bicycle-festival.accent-color-darker {
+  color: #28776f;
+}
+
+.colorscheme-los-angeles-bicycle-festival .accent-bg-darker, .colorscheme-los-angeles-bicycle-festival.accent-bg-darker {
+  background-color: #28776f;
+}
+
+.colorscheme-los-angeles-bicycle-festival .accent-border-darker, .colorscheme-los-angeles-bicycle-festival.accent-border-darker {
+  border-color: #28776f;
+}
+
+.colorscheme-los-angeles-bicycle-festival .accent-color-lighter, .colorscheme-los-angeles-bicycle-festival.accent-color-lighter {
+  color: #ddf4f1;
+}
+
+.colorscheme-los-angeles-bicycle-festival .accent-bg-lighter, .colorscheme-los-angeles-bicycle-festival.accent-bg-lighter {
+  background-color: #ddf4f1;
+}
+
+.colorscheme-los-angeles-bicycle-festival .accent-border-lighter, .colorscheme-los-angeles-bicycle-festival.accent-border-lighter {
+  border-color: #ddf4f1;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-color, .colorscheme-los-angeles-bicycle-festival.outer-color {
@@ -7525,16 +7869,68 @@ body {
   border-color: #ee156f;
 }
 
-.colorscheme-los-angeles-bicycle-festival .gray-color, .colorscheme-los-angeles-bicycle-festival.gray-color {
-  color: #c2c3c1;
+.colorscheme-los-angeles-bicycle-festival .outer-color-darker, .colorscheme-los-angeles-bicycle-festival.outer-color-darker {
+  color: #63072d;
 }
 
-.colorscheme-los-angeles-bicycle-festival .gray-bg, .colorscheme-los-angeles-bicycle-festival nav, .colorscheme-los-angeles-bicycle-festival.gray-bg, nav.colorscheme-los-angeles-bicycle-festival {
-  background-color: #c2c3c1;
+.colorscheme-los-angeles-bicycle-festival .outer-bg-darker, .colorscheme-los-angeles-bicycle-festival.outer-bg-darker {
+  background-color: #63072d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .outer-border-darker, .colorscheme-los-angeles-bicycle-festival.outer-border-darker {
+  border-color: #63072d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .outer-color-lighter, .colorscheme-los-angeles-bicycle-festival.outer-color-lighter {
+  color: #f8a4c7;
+}
+
+.colorscheme-los-angeles-bicycle-festival .outer-bg-lighter, .colorscheme-los-angeles-bicycle-festival.outer-bg-lighter {
+  background-color: #f8a4c7;
+}
+
+.colorscheme-los-angeles-bicycle-festival .outer-border-lighter, .colorscheme-los-angeles-bicycle-festival.outer-border-lighter {
+  border-color: #f8a4c7;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-color, .colorscheme-los-angeles-bicycle-festival.gray-color {
+  color: #8a8d8d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-bg, .colorscheme-los-angeles-bicycle-festival nav.contact, .colorscheme-los-angeles-bicycle-festival.gray-bg, nav.colorscheme-los-angeles-bicycle-festival.contact {
+  background-color: #8a8d8d;
 }
 
 .colorscheme-los-angeles-bicycle-festival .gray-border, .colorscheme-los-angeles-bicycle-festival.gray-border {
-  border-color: #c2c3c1;
+  border-color: #8a8d8d;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-color-darker, .colorscheme-los-angeles-bicycle-festival.gray-color-darker {
+  color: #3e4040;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-bg-darker, .colorscheme-los-angeles-bicycle-festival.gray-bg-darker {
+  background-color: #3e4040;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-border-darker, .colorscheme-los-angeles-bicycle-festival.gray-border-darker {
+  border-color: #3e4040;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-color-lighter, .colorscheme-los-angeles-bicycle-festival.gray-color-lighter {
+  color: #d7d9d9;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-bg-lighter, .colorscheme-los-angeles-bicycle-festival.gray-bg-lighter {
+  background-color: #d7d9d9;
+}
+
+.colorscheme-los-angeles-bicycle-festival .gray-border-lighter, .colorscheme-los-angeles-bicycle-festival.gray-border-lighter {
+  border-color: #d7d9d9;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
@@ -7546,49 +7942,70 @@ body em {
   font-weight: 200;
 }
 
-body > header, section.single {
+a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+nav.main {
+  color: white;
+}
+nav.main ul {
+  line-height: 2.5em;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+}
+nav.main li {
+  list-style: none;
+  height: 2.5em;
+  text-align: center;
+  position: relative;
+}
+nav.main li a {
+  font-weight: 700;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0em;
+}
+nav.main li a:hover {
+  padding-bottom: 0.2em;
+}
+
+.container, section.single {
   background-color: white;
 }
 
-nav.contact:after, body > header.nav:after {
-  content: ' ';
-  display: table;
-  clear: both;
-}
-nav.contact ul, nav.contact li, body > header.nav ul, body > header.nav li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav.contact .menu > .menu-item {
-  float: left;
-  margin-left: 1em;
-}
-nav.contact .menu > .menu-item:first-child {
-  margin-left: 0;
-}
-
-nav.main .menu {
-  display: table;
-  width: 100%;
-}
-nav.main .menu > .menu-item {
-  display: table-cell;
-  width: 1%;
-  color: white;
-}
-nav.main .menu > .menu-item a {
-  color: inherit;
-}
-
 body > header {
-  border-bottom: 0.5em;
   padding: 0;
+}
+body > header .container, body > header section.single {
+  position: relative;
+  z-index: 1;
 }
 body > header h1 {
   font-family: 'omnes-pro', sans-serif;
   font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 body > header h1 a {
   background-size: contain;
@@ -7602,33 +8019,61 @@ body > header h1 a:before {
   height: 100%;
   content: ' ';
 }
-body > header .logos {
-  position: relative;
-}
-body > header .logos ul, body > header .logos li {
+body > header ul, body > header li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-body > header .logos .header-widgets {
-  position: absolute;
-  right: 0;
-  top: 0;
+body > header .header-widgets {
+  padding: 0;
 }
-body > header .logos .widget {
-  display: inline-block;
+body > header .widget {
+  float: right;
 }
-body > header .logos .menu-projects-container li {
-  display: inline-block;
+
+nav.contact {
+  height: 2em;
+  line-height: 2em;
+  box-shadow: 0 0 4em 2em rgba(0, 0, 0, 0.3);
+}
+nav.contact:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+nav.contact ul, nav.contact li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav.contact .container, nav.contact section.single {
+  background-color: transparent;
+}
+nav.contact a {
+  color: white;
+}
+nav.contact a:hover {
+  color: black;
+}
+
+nav.contact .menu > .menu-item {
+  float: left;
   margin-left: 1em;
 }
-body > header .logos .menu-projects-container li:first-child {
+nav.contact .menu > .menu-item:first-child {
   margin-left: 0;
 }
 
+section.single {
+  min-height: 50%;
+}
 section.single h1.page-title {
   font-family: 'futura-pt', sans-serif;
   font-weight: 500;
+}
+section.single article {
+  padding: 0 2em;
+  margin-bottom: 5em;
 }
 section.single article.the-missing {
   text-align: center;
