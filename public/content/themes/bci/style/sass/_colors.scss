@@ -38,12 +38,12 @@ $colors:
   .bg-#{$name} { background-color: $value; }
 }
 
-$colorSchemeParts:                 'primary'     'accent'        'background' 'gray';
+$colorSchemeParts:                 'primary'     'accent'        'outer'       'gray';
 $colorSchemes:
-  ('bci'                          , $cobalt     , $bermuda      , $concrete  , $concrete),
-  ('l-a-bike-trains'              , $green      , $bitter_lemon , $aluminum  , $concrete),
-  ('r5y7'                         , $orange_red , $orange_red   , $cobalt    , $concrete),
-  ('los-angeles-bicycle-festival' , $magenta    , $teal         , $magenta   , $concrete)
+  ('bci'                          , $cobalt     , $bermuda      , $concrete   , $concrete),
+  ('l-a-bike-trains'              , $green      , $bitter_lemon , $bermuda    , $concrete),
+  ('r5y7'                         , $orange_red , $orange_red   , $orange_red , $concrete),
+  ('los-angeles-bicycle-festival' , $magenta    , $teal         , $magenta    , $concrete)
 ;
 
 @each $set in $colorSchemes {
@@ -53,8 +53,8 @@ $colorSchemes:
     $part: nth($colorSchemeParts, $i - 1);
     $color: nth($set, $i);
 
-    .colorscheme-#{$name} .#{$part}-color  { color: $color; }
-    .colorscheme-#{$name} .#{$part}-bg     { background-color: $color; }
-    .colorscheme-#{$name} .#{$part}-border { border-color: $color; }
+    .colorscheme-#{$name} .#{$part}-color , .colorscheme-#{$name}.#{$part}-color   { color: $color; }
+    .colorscheme-#{$name} .#{$part}-bg    , .colorscheme-#{$name}.#{$part}-bg      { background-color: $color; }
+    .colorscheme-#{$name} .#{$part}-border, .colorscheme-#{$name}.#{$part}-border  { border-color: $color; }
   }
 }
