@@ -38,33 +38,23 @@ $colors:
   .bg-#{$name} { background-color: $value; }
 }
 
+$colorSchemeParts:                 'primary'     'accent'        'background' 'gray';
 $colorSchemes:
-  //                              , primary     , accent        , background , gray
-  ('bicycle-culture-institute'    , $cobalt     , $bermuda      , $concrete  , $concrete),
+  ('bci'                          , $cobalt     , $bermuda      , $concrete  , $concrete),
   ('l-a-bike-trains'              , $green      , $bitter_lemon , $aluminum  , $concrete),
   ('r5y7'                         , $orange_red , $orange_red   , $cobalt    , $concrete),
   ('los-angeles-bicycle-festival' , $magenta    , $teal         , $magenta   , $concrete)
 ;
 
 @each $set in $colorSchemes {
-  $name       : nth($set, 1);
-  $primary    : nth($set, 2);
-  $accent     : nth($set, 3);
-  $background : nth($set, 4);
+  $name: nth($set, 1);
 
-  .colorscheme-#{$name} .primary-color     { color: $primary; }
-  .colorscheme-#{$name} .primary-bg        { background-color: $primary; }
-  .colorscheme-#{$name} .primary-border    { border-color: $primary; }
+  @for $i from 2 through 5 {
+    $part: nth($colorSchemeParts, $i - 1);
+    $color: nth($set, $i);
 
-  .colorscheme-#{$name} .accent-color      { color: $accent; }
-  .colorscheme-#{$name} .accent-bg         { background-color: $accent; }
-  .colorscheme-#{$name} .accent-border     { border-color: $accent; }
-
-  .colorscheme-#{$name} .background-color  { color: $background; }
-  .colorscheme-#{$name} .background-bg     { background-color: $background; }
-  .colorscheme-#{$name} .background-border { border-color: $background; }
-
-  .colorscheme-#{$name} .gray-color        { color: $concrete; }
-  .colorscheme-#{$name} .gray-bg           { background-color: $concrete; }
-  .colorscheme-#{$name} .gray-border       { border-color: $concrete; }
+    .colorscheme-#{$name} .#{$part}-color  { color: $color; }
+    .colorscheme-#{$name} .#{$part}-bg     { background-color: $color; }
+    .colorscheme-#{$name} .#{$part}-border { border-color: $color; }
   }
+}

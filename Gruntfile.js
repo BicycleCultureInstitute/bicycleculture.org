@@ -25,7 +25,7 @@ module.exports = function (grunt) {
           imagesDir: 'public/content/themes/bci/img',
           cssDir: 'public/content/themes/bci/style',
           environment: 'production',
-          outputStyle: 'compressed',
+          outputStyle: 'expanded',
           force: true
         }
       }

@@ -13,12 +13,48 @@ nav {
 nav.main {
   @extend .accent-bg;
 }
-body > section {
+body > header, section.single {
   background-color: $white;
+}
+nav.contact, body > header.nav {
+  @include float-block;
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+nav.contact .menu {
+
+  > .menu-item {
+    float: left;
+    margin-left: 1em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+  }
+
+}
+nav.main .menu {
+  display: table;
+  width: 100%;
+
+  > .menu-item {
+    display: table-cell;
+    width: 1%;
+    color: $white;
+
+    a {
+      color: inherit;
+    }
+  }
 }
 body > header {
   border-bottom: 0.5em;
   @extend .accent-border;
+  padding: 0;
 
   h1 {
     @include logo;
@@ -33,31 +69,6 @@ body > header {
         display: block;
         height: 100%;
         content: ' ';
-      }
-    }
-  }
-  nav {
-    @include float-block;
-    ul, li {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    &.contact .menu {
-      > .menu-item {
-        float: left;
-        margin-left: 1em;
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-    &.main .menu {
-      display: table;
-      width: 100%;
-      > .menu-item {
-        display: table-cell;
-        width: 1%;
       }
     }
   }

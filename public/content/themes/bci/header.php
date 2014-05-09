@@ -28,10 +28,10 @@ $body_classes = array('colorscheme-'.$project_slug);
   <?php wp_head(); ?>
 </head>
 <body <?php body_class($body_classes); ?>>
+  <nav class="container contact">
+    <?php wp_nav_menu(array('theme_location' => 'contact')); ?>
+  </nav>
   <header class="container">
-    <nav class="contact">
-      <?php wp_nav_menu(array('theme_location' => 'contact')); ?>
-    </nav>
     <div class="logos">
     <h1><a href="<?php bloginfo('url'); ?>" style="background-image:url(<?php echo get_theme_mod('logo'); ?>);"><?php bloginfo('title'); ?></a></h1>
       <ul class="header-widgets">
