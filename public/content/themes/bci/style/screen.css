@@ -8018,8 +8018,9 @@ nav.main .nav-icon {
   right: 0;
   top: 0;
   color: inherit;
-  width: 2em;
+  width: 1.5em;
   font-size: 1.2em;
+  line-height: 2em;
 }
 @media (max-width: 767px) {
   nav.main .nav-icon {

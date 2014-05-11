@@ -76,8 +76,9 @@ nav.main {
     right: 0;
     top: 0;
     color: inherit;
-    width: 2em;
+    width: 1.5em;
     font-size: 1.2em;
+    line-height: 2em;
 
     @include breakpoint(max-small) {
       display: block;
