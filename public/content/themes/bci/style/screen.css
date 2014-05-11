@@ -8210,7 +8210,7 @@ nav.contact .menu > .menu-item:first-child {
 }
 @media (max-width: 767px) {
   .projects-widget {
-    line-height: 80px;
+    line-height: 90px;
   }
 }
 .projects-widget a {
