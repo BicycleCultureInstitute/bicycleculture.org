@@ -1142,18 +1142,18 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, section.single .page-subnav, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, section.single article, .col-md-9, .col-lg-9, .col-xs-10, .projects-widget, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, section.single .page-subnav, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, section.single article, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .projects-widget a, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .projects-widget, .col-xs-11, .col-xs-12, body > header h1 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .projects-widget a, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, body > header h1, .projects-widget {
   float: left;
 }
 
-.col-xs-12, body > header h1 {
+.col-xs-12, body > header h1, .projects-widget {
   width: 100%;
 }
 
@@ -1161,7 +1161,7 @@ pre code {
   width: 91.66666667%;
 }
 
-.col-xs-10, .projects-widget {
+.col-xs-10 {
   width: 83.33333333%;
 }
 
@@ -1349,7 +1349,7 @@ pre code {
   margin-left: 16.66666667%;
 }
 
-.col-xs-offset-1, .projects-widget {
+.col-xs-offset-1 {
   margin-left: 8.33333333%;
 }
 
@@ -7445,7 +7445,7 @@ body {
   color: #61849c;
 }
 
-.colorscheme-bci .accent-bg, .colorscheme-bci nav.main, .colorscheme-bci.accent-bg, nav.colorscheme-bci.main {
+.colorscheme-bci .accent-bg, .colorscheme-bci nav.main, .colorscheme-bci nav.main li, nav.main .colorscheme-bci li, .colorscheme-bci.accent-bg, nav.colorscheme-bci.main, nav.main li.colorscheme-bci {
   background-color: #61849c;
 }
 
@@ -7589,7 +7589,7 @@ body {
   color: #57543e;
 }
 
-.colorscheme-l-a-bike-trains .accent-bg, .colorscheme-l-a-bike-trains nav.main, .colorscheme-l-a-bike-trains.accent-bg, nav.colorscheme-l-a-bike-trains.main {
+.colorscheme-l-a-bike-trains .accent-bg, .colorscheme-l-a-bike-trains nav.main, .colorscheme-l-a-bike-trains nav.main li, nav.main .colorscheme-l-a-bike-trains li, .colorscheme-l-a-bike-trains.accent-bg, nav.colorscheme-l-a-bike-trains.main, nav.main li.colorscheme-l-a-bike-trains {
   background-color: #57543e;
 }
 
@@ -7733,7 +7733,7 @@ body {
   color: #ef2921;
 }
 
-.colorscheme-r5y7 .accent-bg, .colorscheme-r5y7 nav.main, .colorscheme-r5y7.accent-bg, nav.colorscheme-r5y7.main {
+.colorscheme-r5y7 .accent-bg, .colorscheme-r5y7 nav.main, .colorscheme-r5y7 nav.main li, nav.main .colorscheme-r5y7 li, .colorscheme-r5y7.accent-bg, nav.colorscheme-r5y7.main, nav.main li.colorscheme-r5y7 {
   background-color: #ef2921;
 }
 
@@ -7877,7 +7877,7 @@ body {
   color: #6bcdc3;
 }
 
-.colorscheme-los-angeles-bicycle-festival .accent-bg, .colorscheme-los-angeles-bicycle-festival nav.main, .colorscheme-los-angeles-bicycle-festival.accent-bg, nav.colorscheme-los-angeles-bicycle-festival.main {
+.colorscheme-los-angeles-bicycle-festival .accent-bg, .colorscheme-los-angeles-bicycle-festival nav.main, .colorscheme-los-angeles-bicycle-festival nav.main li, nav.main .colorscheme-los-angeles-bicycle-festival li, .colorscheme-los-angeles-bicycle-festival.accent-bg, nav.colorscheme-los-angeles-bicycle-festival.main, nav.main li.colorscheme-los-angeles-bicycle-festival {
   background-color: #6bcdc3;
 }
 
@@ -7979,11 +7979,16 @@ nav.main {
   padding: 0;
   position: relative;
   line-height: 2.5em;
+  min-height: 2.5em;
 }
 nav.main ul {
   margin-bottom: 0;
   padding: 0;
   position: relative;
+}
+nav.main ul.backup-menu {
+  position: absolute;
+  width: 100%;
 }
 nav.main li {
   list-style: none;
@@ -8023,6 +8028,9 @@ nav.main .nav-icon {
 @media (max-width: 767px) {
   nav.main li {
     display: none;
+  }
+  nav.main .backup-menu li {
+    display: block;
   }
   nav.main.expand li, nav.main li.current-menu-item, nav.main li.current-page-ancestor {
     display: block;
@@ -8182,7 +8190,7 @@ section.single article.the-missing {
 }
 @media (max-width: 767px) {
   .projects-widget {
-    line-height: 70px;
+    line-height: 80px;
   }
 }
 .projects-widget a {

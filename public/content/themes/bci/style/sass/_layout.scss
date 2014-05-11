@@ -26,11 +26,17 @@ nav.main {
   padding: 0;
   position: relative;
   line-height: 2.5em;
+  min-height: 2.5em;
 
   ul {
     margin-bottom: 0;
     padding: 0;
     position: relative;
+
+    &.backup-menu {
+      position: absolute;
+      width: 100%;
+    }
   }
 
   li {
@@ -40,6 +46,7 @@ nav.main {
     text-align: center;
     position: relative;
     padding: 0;
+    @extend .accent-bg;
 
     &:first-child {
       @extend .col-sm-offset-1;
@@ -79,6 +86,9 @@ nav.main {
   @include breakpoint(max-small) {
     li {
       display: none;
+    }
+    .backup-menu li {
+      display: block;
     }
 
     &.expand li, li.current-menu-item, li.current-page-ancestor {
