@@ -50,7 +50,6 @@ function theTitle() {
 
   $title_start = '<h1 class="'.implode(' ', $title_classes).'">';
 
-  $title_start .= $featured_image;
   $title_start .= '<span>';
 
   if (get_field('title_type') === 'text') {
@@ -62,7 +61,7 @@ function theTitle() {
     $title = get_the_title();
   }
 
-  $title_end = '</span></h1>';
+  $title_end = '</span>'.$featured_image.'</h1>';
 
   echo $title_start.$title.$title_end;
 

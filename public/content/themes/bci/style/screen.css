@@ -1108,7 +1108,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, section.single {
+.container, .single {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -1116,17 +1116,17 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .container, section.single {
+  .container, .single {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container, section.single {
+  .container, .single {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container, section.single {
+  .container, .single {
     width: 1170px;
   }
 }
@@ -1142,7 +1142,7 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, section.single .page-subnav, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, section.single article, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .single section.sidebar, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .single section.main-content, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1358,7 +1358,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, section.single .page-subnav, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-sm-5, .col-sm-6, .projects-widget, .col-sm-7, .col-sm-8, .col-sm-9, section.single article, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, .single section.sidebar, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-sm-5, .col-sm-6, .projects-widget, .col-sm-7, .col-sm-8, .col-sm-9, .single section.main-content, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
@@ -1374,7 +1374,7 @@ pre code {
     width: 83.33333333%;
   }
 
-  .col-sm-9, section.single article {
+  .col-sm-9, .single section.main-content {
     width: 75%;
   }
 
@@ -1398,7 +1398,7 @@ pre code {
     width: 33.33333333%;
   }
 
-  .col-sm-3, section.single .page-subnav {
+  .col-sm-3, .single section.sidebar {
     width: 25%;
   }
 
@@ -1446,7 +1446,7 @@ pre code {
     right: 33.33333333%;
   }
 
-  .col-sm-pull-3, section.single article {
+  .col-sm-pull-3, .single section.main-content {
     right: 25%;
   }
 
@@ -1474,7 +1474,7 @@ pre code {
     left: 83.33333333%;
   }
 
-  .col-sm-push-9, section.single .page-subnav {
+  .col-sm-push-9, .single section.sidebar {
     left: 75%;
   }
 
@@ -4750,20 +4750,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
   }
 }
-.container > .navbar-header, section.single > .navbar-header,
+.container > .navbar-header, .single > .navbar-header,
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
-section.single > .navbar-collapse,
+.single > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 
 @media (min-width: 768px) {
-  .container > .navbar-header, section.single > .navbar-header,
+  .container > .navbar-header, .single > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
-  section.single > .navbar-collapse,
+  .single > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
@@ -4818,7 +4818,7 @@ section.single > .navbar-collapse,
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, .navbar > section.single .navbar-brand,
+  .navbar > .container .navbar-brand, .navbar > .single .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
@@ -5566,11 +5566,11 @@ a.list-group-item.active > .badge,
   font-weight: 200;
 }
 
-.container .jumbotron, section.single .jumbotron {
+.container .jumbotron, .single .jumbotron {
   border-radius: 6px;
 }
 
-.jumbotron .container, .jumbotron section.single {
+.jumbotron .container, .jumbotron .single {
   max-width: 100%;
 }
 
@@ -5580,7 +5580,7 @@ a.list-group-item.active > .badge,
     padding-bottom: 48px;
   }
 
-  .container .jumbotron, section.single .jumbotron {
+  .container .jumbotron, .single .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -7011,9 +7011,9 @@ button.close {
 .clearfix:before,
 .clearfix:after,
 .container:before,
-section.single:before,
+.single:before,
 .container:after,
-section.single:after,
+.single:after,
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
@@ -7044,7 +7044,7 @@ section.single:after,
 
 .clearfix:after,
 .container:after,
-section.single:after,
+.single:after,
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
@@ -7405,7 +7405,7 @@ body {
   border-color: #31558b;
 }
 
-.colorscheme-bci .title-color, .colorscheme-bci section.single h1.page-title, section.single .colorscheme-bci h1.page-title, .colorscheme-bci.title-color, section.single h1.colorscheme-bci.page-title {
+.colorscheme-bci .title-color, .colorscheme-bci .single h1.page-title, .single .colorscheme-bci h1.page-title, .colorscheme-bci.title-color, .single h1.colorscheme-bci.page-title {
   color: #5b6274;
 }
 
@@ -7549,7 +7549,7 @@ body {
   border-color: #89d750;
 }
 
-.colorscheme-l-a-bike-trains .title-color, .colorscheme-l-a-bike-trains section.single h1.page-title, section.single .colorscheme-l-a-bike-trains h1.page-title, .colorscheme-l-a-bike-trains.title-color, section.single h1.colorscheme-l-a-bike-trains.page-title {
+.colorscheme-l-a-bike-trains .title-color, .colorscheme-l-a-bike-trains .single h1.page-title, .single .colorscheme-l-a-bike-trains h1.page-title, .colorscheme-l-a-bike-trains.title-color, .single h1.colorscheme-l-a-bike-trains.page-title {
   color: #6ec72d;
 }
 
@@ -7693,7 +7693,7 @@ body {
   border-color: #f25751;
 }
 
-.colorscheme-r5y7 .title-color, .colorscheme-r5y7 section.single h1.page-title, section.single .colorscheme-r5y7 h1.page-title, .colorscheme-r5y7.title-color, section.single h1.colorscheme-r5y7.page-title {
+.colorscheme-r5y7 .title-color, .colorscheme-r5y7 .single h1.page-title, .single .colorscheme-r5y7 h1.page-title, .colorscheme-r5y7.title-color, .single h1.colorscheme-r5y7.page-title {
   color: #ef2921;
 }
 
@@ -7837,7 +7837,7 @@ body {
   border-color: #f1458c;
 }
 
-.colorscheme-los-angeles-bicycle-festival .title-color, .colorscheme-los-angeles-bicycle-festival section.single h1.page-title, section.single .colorscheme-los-angeles-bicycle-festival h1.page-title, .colorscheme-los-angeles-bicycle-festival.title-color, section.single h1.colorscheme-los-angeles-bicycle-festival.page-title {
+.colorscheme-los-angeles-bicycle-festival .title-color, .colorscheme-los-angeles-bicycle-festival .single h1.page-title, .single .colorscheme-los-angeles-bicycle-festival h1.page-title, .colorscheme-los-angeles-bicycle-festival.title-color, .single h1.colorscheme-los-angeles-bicycle-festival.page-title {
   color: #ee156f;
 }
 
@@ -8037,14 +8037,14 @@ nav.main .nav-icon {
   }
 }
 
-.container, section.single {
+.container, .single {
   background-color: white;
 }
 
 body > header {
   padding: 0;
 }
-body > header .container, body > header section.single {
+body > header .container, body > header .single {
   position: relative;
   z-index: 1;
 }
@@ -8095,7 +8095,7 @@ nav.contact ul, nav.contact li {
   padding: 0;
   margin: 0;
 }
-nav.contact .container, nav.contact section.single {
+nav.contact .container, nav.contact .single {
   background-color: transparent;
 }
 nav.contact a {
@@ -8120,53 +8120,68 @@ nav.contact .menu > .menu-item:first-child {
   background-size: cover;
 }
 
-section.single {
+.single {
   min-height: 50%;
   padding-bottom: 5em;
 }
-section.single h1.page-title {
+.single h1.page-title {
   font-family: 'omnes-pro', sans-serif;
   font-weight: 600;
   font-weight: 400;
   margin: 2rem 0;
   padding: 0;
 }
-section.single h1.featured-image {
+.single h1.featured-image {
   position: relative;
 }
-section.single h1.featured-image .scaled-image {
+.single h1.featured-image .scaled-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 0px;
   padding-bottom: 45%;
 }
-section.single h1.featured-image span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: 1;
-  background: white;
-  padding: 0 1em 0.5em 2em;
-  min-width: 9em;
-  border-radius: 0 0 0.5em 0;
+.single h1.featured-image span {
+  display: block;
 }
-section.single .page-subnav {
+@media (max-width: 767px) {
+  .single h1.featured-image span {
+    margin-bottom: 0.3em;
+  }
+}
+@media (min-width: 768px) {
+  .single h1.featured-image span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+    background: white;
+    padding: 0 1em 0.5em 2em;
+    min-width: 9em;
+    border-radius: 0 0 0.5em 0;
+  }
+}
+@media (max-width: 767px) {
+  .single section.sidebar {
+    padding: 0;
+  }
+}
+.single section.sidebar .page-subnav {
   margin: 2rem 0;
 }
-section.single .page-subnav ul {
+.single section.sidebar .page-subnav ul {
   padding: 0;
   margin: 0;
 }
-section.single .page-subnav li {
+.single section.sidebar .page-subnav li {
   list-style: none;
   position: relative;
 }
-section.single .page-subnav li.current_page_item a {
+.single section.sidebar .page-subnav li.current_page_item a {
   color: inherit;
 }
-section.single .page-subnav li.current_page_item::before {
+.single section.sidebar .page-subnav li.current_page_item::before {
   content: '\25b6';
   display: block;
   position: absolute;
@@ -8175,13 +8190,18 @@ section.single .page-subnav li.current_page_item::before {
   left: -1rem;
   top: 0;
 }
-section.single article {
+.single section.main-content {
   padding: 0 2em;
 }
-section.single article p {
+.single section.main-content p {
   margin: 1em 0;
 }
-section.single article.the-missing {
+@media (max-width: 767px) {
+  .single section.main-content {
+    padding: 0;
+  }
+}
+.single article.the-missing {
   text-align: center;
 }
 

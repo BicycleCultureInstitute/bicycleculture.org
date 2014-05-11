@@ -200,7 +200,7 @@ nav.contact .menu {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section.single {
+.single {
   @extend .container;
   min-height: 50%;
   padding-bottom: 5em;
@@ -225,56 +225,75 @@ section.single {
     }
 
     span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin: 0;
-      z-index: 1;
-      background: $white;
-      padding: 0 1em 0.5em 2em;
-      min-width: 9em;
-      border-radius: 0 0 0.5em 0;
+      display: block;
+
+      @include breakpoint(max-small) {
+        margin-bottom: 0.3em;
+      }
+      @include breakpoint(min-small) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 1;
+        background: $white;
+        padding: 0 1em 0.5em 2em;
+        min-width: 9em;
+        border-radius: 0 0 0.5em 0;
+      }
     }
   }
 
-  .page-subnav {
-    margin: 2rem 0;
+  section.sidebar {
     @extend .col-sm-3;
     @extend .col-sm-push-9;
 
-    ul {
+    @include breakpoint(max-small) {
       padding: 0;
-      margin: 0;
     }
-    li {
-      list-style: none;
-      position: relative;
 
-      &.current_page_item {
-        a {
-          color: inherit;
-        }
+    .page-subnav {
+      margin: 2rem 0;
 
-        &::before {
-          content: '\25b6';
-          display: block;
-          position: absolute;
-          line-height: 2.3rem;
-          font-size: 0.5em;
-          left: -1rem;
-          top: 0;
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+        position: relative;
+
+        &.current_page_item {
+          a {
+            color: inherit;
+          }
+
+          &::before {
+            content: '\25b6';
+            display: block;
+            position: absolute;
+            line-height: 2.3rem;
+            font-size: 0.5em;
+            left: -1rem;
+            top: 0;
+          }
         }
       }
     }
   }
 
-  article {
+  section.main-content {
     @extend .col-sm-9;
     @extend .col-sm-pull-3;
     padding: 0 2em;
 
     p {
       margin: 1em 0;
+    }
+
+    @include breakpoint(max-small) {
+      padding: 0;
     }
   }
 

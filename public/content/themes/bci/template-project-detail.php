@@ -4,24 +4,35 @@
 */
 get_header();
 
-echo '<section class="single project-detail">';
+echo '<div class="single project-detail">';
 
+  echo '<section class="sidebar">';
+  theSubnav();
+  echo '</section>';
+  echo '<section class="main-content">';
 
-  if(have_posts()) : while(have_posts()) : the_post();
+  if(have_posts()) :
+    while(have_posts()) : the_post();
 
-    echo '<article>';
+      echo '<article>';
 
-    theTitle();
-    the_content();
+      theTitle();
 
-    echo '</article>';
+      echo '<div class="clearfix"></div>';
 
-  endwhile; else: 
+      the_content();
+
+      echo '</article>';
+
+    endwhile;
+  else:
 
     theMissing();
 
   endif;
 
-echo '</section>';
+  echo '</section>';
+
+echo '</div>';
 
 get_footer(); ?>

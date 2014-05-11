@@ -7,29 +7,35 @@ $body_classes = array('colorscheme-'.$post->post_name);
 
 get_header();
 
-echo '<section class="single projects-list">';
+echo '<div class="single projects-list">';
 
+  echo '<section class="sidebar">';
+  theSubnav();
+  echo '</section>';
+  echo '<section class="main-content">';
 
-  if(have_posts()) : while(have_posts()) : the_post();
+  if(have_posts()) :
+    while(have_posts()) : the_post();
 
-    theSubnav();
+      echo '<article>';
 
-    echo '<article>';
+      theTitle();
 
-    theTitle();
+      echo '<div class="clearfix"></div>';
 
-    echo '<div class="clearfix"></div>';
+      the_content();
 
-    the_content();
+      echo '</article>';
 
-    echo '</article>';
-
-  endwhile; else: 
+    endwhile;
+  else:
 
     theMissing();
 
   endif;
 
-echo '</section>';
+  echo '</section>';
+
+echo '</div>';
 
 get_footer(); ?>
