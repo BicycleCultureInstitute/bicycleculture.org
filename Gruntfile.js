@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
  
-    uglify: {
+    concat: {
       min: {
         files: {
           'public/content/themes/bci/js/main.js': ['public/content/themes/bci/js/src/libs/*.js','public/content/themes/bci/js/src/*.js']
@@ -72,6 +72,6 @@ module.exports = function (grunt) {
   });
  
   // Development task checks and concatenates JS, compiles SASS preserving comments and nesting, runs dev server, and starts watch
-  grunt.registerTask('default', ['compass', 'uglify', 'imagemin', 'browser_sync', 'watch']);
+  grunt.registerTask('default', ['compass', 'concat', 'imagemin', 'browser_sync', 'watch']);
  
  }

@@ -7469,7 +7469,7 @@ body {
   color: #bfcdd7;
 }
 
-.colorscheme-bci .accent-bg-lighter, .colorscheme-bci .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-bci a:hover, .colorscheme-bci.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-bci:hover {
+.colorscheme-bci .accent-bg-lighter, .colorscheme-bci .single section.sidebar nav.page-subnav li a:hover, .single section.sidebar nav.page-subnav li .colorscheme-bci a:hover, .colorscheme-bci.accent-bg-lighter, .single section.sidebar nav.page-subnav li a.colorscheme-bci:hover {
   background-color: #bfcdd7;
 }
 
@@ -7613,7 +7613,7 @@ body {
   color: #a8a486;
 }
 
-.colorscheme-l-a-bike-trains .accent-bg-lighter, .colorscheme-l-a-bike-trains .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-l-a-bike-trains a:hover, .colorscheme-l-a-bike-trains.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-l-a-bike-trains:hover {
+.colorscheme-l-a-bike-trains .accent-bg-lighter, .colorscheme-l-a-bike-trains .single section.sidebar nav.page-subnav li a:hover, .single section.sidebar nav.page-subnav li .colorscheme-l-a-bike-trains a:hover, .colorscheme-l-a-bike-trains.accent-bg-lighter, .single section.sidebar nav.page-subnav li a.colorscheme-l-a-bike-trains:hover {
   background-color: #a8a486;
 }
 
@@ -7757,7 +7757,7 @@ body {
   color: #f9b3b0;
 }
 
-.colorscheme-r5y7 .accent-bg-lighter, .colorscheme-r5y7 .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-r5y7 a:hover, .colorscheme-r5y7.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-r5y7:hover {
+.colorscheme-r5y7 .accent-bg-lighter, .colorscheme-r5y7 .single section.sidebar nav.page-subnav li a:hover, .single section.sidebar nav.page-subnav li .colorscheme-r5y7 a:hover, .colorscheme-r5y7.accent-bg-lighter, .single section.sidebar nav.page-subnav li a.colorscheme-r5y7:hover {
   background-color: #f9b3b0;
 }
 
@@ -7901,7 +7901,7 @@ body {
   color: #ddf4f1;
 }
 
-.colorscheme-los-angeles-bicycle-festival .accent-bg-lighter, .colorscheme-los-angeles-bicycle-festival .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-los-angeles-bicycle-festival a:hover, .colorscheme-los-angeles-bicycle-festival.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-los-angeles-bicycle-festival:hover {
+.colorscheme-los-angeles-bicycle-festival .accent-bg-lighter, .colorscheme-los-angeles-bicycle-festival .single section.sidebar nav.page-subnav li a:hover, .single section.sidebar nav.page-subnav li .colorscheme-los-angeles-bicycle-festival a:hover, .colorscheme-los-angeles-bicycle-festival.accent-bg-lighter, .single section.sidebar nav.page-subnav li a.colorscheme-los-angeles-bicycle-festival:hover {
   background-color: #ddf4f1;
 }
 
@@ -8168,26 +8168,34 @@ nav.contact .menu > .menu-item:first-child {
     padding: 0;
   }
 }
-.single section.sidebar .page-subnav {
+.single section.sidebar nav.page-subnav {
   line-height: 1.8em;
   margin: 2rem 0;
 }
-.single section.sidebar .page-subnav ul {
+@media (max-width: 767px) {
+  .single section.sidebar nav.page-subnav {
+    display: none;
+  }
+  .single section.sidebar nav.page-subnav.expand {
+    display: block;
+  }
+}
+.single section.sidebar nav.page-subnav ul {
   padding: 0;
   margin: 0;
 }
-.single section.sidebar .page-subnav li {
+.single section.sidebar nav.page-subnav li {
   list-style: none;
   position: relative;
 }
-.single section.sidebar .page-subnav li a {
+.single section.sidebar nav.page-subnav li a {
   display: block;
   padding-left: 0.2em;
 }
-.single section.sidebar .page-subnav li.current_page_item a {
+.single section.sidebar nav.page-subnav li.current_page_item a {
   color: inherit;
 }
-.single section.sidebar .page-subnav li.current_page_item::before {
+.single section.sidebar nav.page-subnav li.current_page_item::before {
   content: '\25b6';
   display: block;
   position: absolute;

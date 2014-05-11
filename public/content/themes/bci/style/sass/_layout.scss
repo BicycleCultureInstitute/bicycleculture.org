@@ -253,9 +253,17 @@ nav.contact .menu {
       padding: 0;
     }
 
-    .page-subnav {
+    nav.page-subnav {
       line-height: 1.8em;
       margin: 2rem 0;
+
+      @include breakpoint(max-small) {
+        display: none;
+
+        &.expand {
+          display: block;
+        }
+      }
 
       ul {
         padding: 0;
