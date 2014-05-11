@@ -20,21 +20,19 @@ class Project_Logos_Widget extends WP_Widget {
       )
     ) );
     if ( $projects->have_posts() ) :
-      echo '<ul class="projects-widget">';
+      echo '<div class="projects-widget">';
       while ( $projects->have_posts() ) : $projects->the_post();
         $logoColor = get_field('logo_color');
         $logoGrayscale = get_field('logo_grayscale');
         $classes = array('project-logo', 'project-logo-'.$post->post_name);
         if ($project_slug == $post->post_name) $classes[] = 'active';
 
-        echo '<li class="'.implode(' ', $classes).'">';
-        echo '<a href="'.get_the_permalink().'">';
-        echo '<img src="'.$logoColor['url'].'" alt="'.$logoColor['url'].'" class="logo-color">';
-        echo '<img src="'.$logoGrayscale['url'].'" alt="'.$logoGrayscale['url'].'" class="logo-grayscale">';
+        echo '<a class="'.implode(' ', $classes).'" href="'.get_the_permalink().'">';
+        echo '<span style="background-image:url('.$logoColor['url'].')" class="logo logo-color"></span>';
+        echo '<span style="background-image:url('.$logoGrayscale['url'].')" class="logo logo-grayscale"></span>';
         echo '</a>';
-        echo '</li>';
       endwhile;
-      echo '</ul>';
+      echo '</div>';
     endif;
     wp_reset_postdata();
   }

@@ -46,5 +46,6 @@ $body_classes = array('colorscheme-'.$project_slug);
     </div>
     <nav class="main container">
       <?php wp_nav_menu(array('theme_location' => 'main')); ?>
+      <a class="nav-icon">&#9776;</a>
     </nav>
   </header>

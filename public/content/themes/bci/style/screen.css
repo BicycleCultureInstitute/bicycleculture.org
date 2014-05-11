@@ -1142,18 +1142,18 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, section.single .page-subnav, .col-md-3, .col-lg-3, .col-xs-4, ul.projects-widget li, .col-sm-4, body > header .widget, body > header .menu-projects-container li, ul.projects-widget, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, section.single article, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, section.single .page-subnav, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, section.single article, .col-md-9, .col-lg-9, .col-xs-10, .projects-widget, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, ul.projects-widget li, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .projects-widget a, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .projects-widget, .col-xs-11, .col-xs-12, body > header h1 {
   float: left;
 }
 
-.col-xs-12 {
+.col-xs-12, body > header h1 {
   width: 100%;
 }
 
@@ -1161,7 +1161,7 @@ pre code {
   width: 91.66666667%;
 }
 
-.col-xs-10 {
+.col-xs-10, .projects-widget {
   width: 83.33333333%;
 }
 
@@ -1185,7 +1185,7 @@ pre code {
   width: 41.66666667%;
 }
 
-.col-xs-4, ul.projects-widget li {
+.col-xs-4, .projects-widget a {
   width: 33.33333333%;
 }
 
@@ -1349,7 +1349,7 @@ pre code {
   margin-left: 16.66666667%;
 }
 
-.col-xs-offset-1 {
+.col-xs-offset-1, .projects-widget {
   margin-left: 8.33333333%;
 }
 
@@ -1358,7 +1358,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, section.single .page-subnav, .col-sm-4, body > header .widget, body > header .menu-projects-container li, ul.projects-widget, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, section.single article, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, section.single .page-subnav, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-sm-5, .col-sm-6, .projects-widget, .col-sm-7, .col-sm-8, .col-sm-9, section.single article, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
@@ -1386,7 +1386,7 @@ pre code {
     width: 58.33333333%;
   }
 
-  .col-sm-6 {
+  .col-sm-6, .projects-widget {
     width: 50%;
   }
 
@@ -1394,7 +1394,7 @@ pre code {
     width: 41.66666667%;
   }
 
-  .col-sm-4, body > header .widget, body > header .menu-projects-container li, ul.projects-widget {
+  .col-sm-4, body > header .widget, body > header .menu-projects-container li {
     width: 33.33333333%;
   }
 
@@ -1446,7 +1446,7 @@ pre code {
     right: 33.33333333%;
   }
 
-  .col-sm-pull-3 {
+  .col-sm-pull-3, section.single article {
     right: 25%;
   }
 
@@ -1474,7 +1474,7 @@ pre code {
     left: 83.33333333%;
   }
 
-  .col-sm-push-9 {
+  .col-sm-push-9, section.single .page-subnav {
     left: 75%;
   }
 
@@ -1538,7 +1538,7 @@ pre code {
     margin-left: 58.33333333%;
   }
 
-  .col-sm-offset-6 {
+  .col-sm-offset-6, .projects-widget {
     margin-left: 50%;
   }
 
@@ -1567,7 +1567,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .projects-widget, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -1603,7 +1603,7 @@ pre code {
     width: 41.66666667%;
   }
 
-  .col-md-4 {
+  .col-md-4, .projects-widget {
     width: 33.33333333%;
   }
 
@@ -1739,7 +1739,7 @@ pre code {
     margin-left: 75%;
   }
 
-  .col-md-offset-8 {
+  .col-md-offset-8, .projects-widget {
     margin-left: 66.66666667%;
   }
 
@@ -3962,7 +3962,7 @@ input[type="button"].btn-block {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
-.dropdown-menu.pull-right, ul.dropdown-menu.projects-widget {
+.dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
@@ -4050,7 +4050,7 @@ input[type="button"].btn-block {
   z-index: 990;
 }
 
-.pull-right > .dropdown-menu, ul.projects-widget > .dropdown-menu {
+.pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -5830,7 +5830,7 @@ a.thumbnail.active {
   margin-right: 10px;
 }
 
-.media > .pull-right, .media > ul.projects-widget {
+.media > .pull-right {
   margin-left: 10px;
 }
 
@@ -7066,7 +7066,7 @@ section.single:after,
   margin-left: auto;
 }
 
-.pull-right, ul.projects-widget {
+.pull-right {
   float: right !important;
 }
 
@@ -7977,9 +7977,10 @@ a:hover {
 nav.main {
   color: white;
   padding: 0;
+  position: relative;
+  line-height: 2.5em;
 }
 nav.main ul {
-  line-height: 2.5em;
   margin-bottom: 0;
   padding: 0;
   position: relative;
@@ -8005,6 +8006,28 @@ nav.main li a {
 nav.main li a:hover, nav.main li.current-menu-item, nav.main li.current-page-ancestor {
   line-height: 2em;
 }
+nav.main .nav-icon {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: inherit;
+  width: 2em;
+  font-size: 1.2em;
+}
+@media (max-width: 767px) {
+  nav.main .nav-icon {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  nav.main li {
+    display: none;
+  }
+  nav.main.expand li, nav.main li.current-menu-item, nav.main li.current-page-ancestor {
+    display: block;
+  }
+}
 
 .container, section.single {
   background-color: white;
@@ -8026,6 +8049,7 @@ body > header h1 {
 body > header h1 a {
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   display: block;
   height: 120px;
   overflow: hidden;
@@ -8153,38 +8177,34 @@ section.single article.the-missing {
   text-align: center;
 }
 
-ul.projects-widget {
-  padding: 0;
-  margin: 25px 0 0;
-  line-height: 70px;
+.projects-widget {
+  line-height: 120px;
 }
-ul.projects-widget li {
-  height: 70px;
-  list-style: none;
-  text-align: center;
+@media (max-width: 767px) {
+  .projects-widget {
+    line-height: 70px;
+  }
+}
+.projects-widget a {
   padding: 0 0.5em;
-  vertical-align: middle;
 }
-ul.projects-widget a {
-  display: inline-block;
+.projects-widget a .logo {
   width: 100%;
-  height: 100%;
-}
-ul.projects-widget a img {
-  max-width: 100%;
-  max-height: 100%;
+  height: 0;
+  padding-bottom: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
   vertical-align: middle;
 }
-ul.projects-widget a img.logo-color {
+.projects-widget a .logo.logo-color {
   display: none;
 }
-ul.projects-widget a img.logo-grayscale {
+.projects-widget a.active .logo-color, .projects-widget a:hover .logo-color {
   display: inline-block;
 }
-ul.projects-widget li.active a img.logo-color, ul.projects-widget a:hover img.logo-color {
-  display: inline-block;
-}
-ul.projects-widget li.active a img.logo-grayscale, ul.projects-widget a:hover img.logo-grayscale {
+.projects-widget a.active .logo-grayscale, .projects-widget a:hover .logo-grayscale {
   display: none;
 }
 

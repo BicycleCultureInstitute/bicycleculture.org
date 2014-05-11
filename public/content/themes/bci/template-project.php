@@ -9,6 +9,8 @@ echo '<section class="single project">';
 
   if(have_posts()) : while(have_posts()) : the_post();
 
+    theSubnav();
+
     echo '<article>';
 
     theTitle();
@@ -18,8 +20,6 @@ echo '<section class="single project">';
     the_content();
 
     echo '</article>';
-
-    theSubnav();
 
   endwhile; else: 
 
