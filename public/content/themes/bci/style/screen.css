@@ -1142,7 +1142,7 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .single section.sidebar, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .single section.main-content, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .single section.sidebar, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .single section.main-content, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1358,7 +1358,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, .single section.sidebar, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .col-sm-5, .col-sm-6, .projects-widget, .col-sm-7, .col-sm-8, .col-sm-9, .single section.main-content, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, nav.main li, body > header h1, .col-sm-3, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .single section.sidebar, .col-sm-5, .col-sm-6, .projects-widget, .col-sm-7, .col-sm-8, .single section.main-content, .col-sm-9, .col-sm-10, body > header .header-widgets, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
@@ -1374,11 +1374,11 @@ pre code {
     width: 83.33333333%;
   }
 
-  .col-sm-9, .single section.main-content {
+  .col-sm-9 {
     width: 75%;
   }
 
-  .col-sm-8 {
+  .col-sm-8, .single section.main-content {
     width: 66.66666667%;
   }
 
@@ -1394,11 +1394,11 @@ pre code {
     width: 41.66666667%;
   }
 
-  .col-sm-4, body > header .widget, body > header .menu-projects-container li {
+  .col-sm-4, body > header .widget, body > header .menu-projects-container li, .single section.sidebar {
     width: 33.33333333%;
   }
 
-  .col-sm-3, .single section.sidebar {
+  .col-sm-3 {
     width: 25%;
   }
 
@@ -1442,11 +1442,11 @@ pre code {
     right: 41.66666667%;
   }
 
-  .col-sm-pull-4 {
+  .col-sm-pull-4, .single section.main-content {
     right: 33.33333333%;
   }
 
-  .col-sm-pull-3, .single section.main-content {
+  .col-sm-pull-3 {
     right: 25%;
   }
 
@@ -1474,11 +1474,11 @@ pre code {
     left: 83.33333333%;
   }
 
-  .col-sm-push-9, .single section.sidebar {
+  .col-sm-push-9 {
     left: 75%;
   }
 
-  .col-sm-push-8 {
+  .col-sm-push-8, .single section.sidebar {
     left: 66.66666667%;
   }
 
@@ -7394,15 +7394,15 @@ body {
 }
 
 .colorscheme-bci .primary-color-lighter, .colorscheme-bci.primary-color-lighter {
-  color: #31558b;
+  color: #5d87c5;
 }
 
 .colorscheme-bci .primary-bg-lighter, .colorscheme-bci.primary-bg-lighter {
-  background-color: #31558b;
+  background-color: #5d87c5;
 }
 
 .colorscheme-bci .primary-border-lighter, .colorscheme-bci.primary-border-lighter {
-  border-color: #31558b;
+  border-color: #5d87c5;
 }
 
 .colorscheme-bci .title-color, .colorscheme-bci .single h1.page-title, .single .colorscheme-bci h1.page-title, .colorscheme-bci.title-color, .single h1.colorscheme-bci.page-title {
@@ -7430,15 +7430,15 @@ body {
 }
 
 .colorscheme-bci .title-color-lighter, .colorscheme-bci.title-color-lighter {
-  color: #727a90;
+  color: #abb0bd;
 }
 
 .colorscheme-bci .title-bg-lighter, .colorscheme-bci.title-bg-lighter {
-  background-color: #727a90;
+  background-color: #abb0bd;
 }
 
 .colorscheme-bci .title-border-lighter, .colorscheme-bci.title-border-lighter {
-  border-color: #727a90;
+  border-color: #abb0bd;
 }
 
 .colorscheme-bci .accent-color, .colorscheme-bci.accent-color {
@@ -7466,15 +7466,15 @@ body {
 }
 
 .colorscheme-bci .accent-color-lighter, .colorscheme-bci.accent-color-lighter {
-  color: #809cb0;
+  color: #bfcdd7;
 }
 
-.colorscheme-bci .accent-bg-lighter, .colorscheme-bci.accent-bg-lighter {
-  background-color: #809cb0;
+.colorscheme-bci .accent-bg-lighter, .colorscheme-bci .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-bci a:hover, .colorscheme-bci.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-bci:hover {
+  background-color: #bfcdd7;
 }
 
 .colorscheme-bci .accent-border-lighter, .colorscheme-bci.accent-border-lighter {
-  border-color: #809cb0;
+  border-color: #bfcdd7;
 }
 
 .colorscheme-bci .outer-color, .colorscheme-bci.outer-color {
@@ -7538,15 +7538,15 @@ body {
 }
 
 .colorscheme-l-a-bike-trains .primary-color-lighter, .colorscheme-l-a-bike-trains.primary-color-lighter {
-  color: #89d750;
+  color: #c1eaa3;
 }
 
 .colorscheme-l-a-bike-trains .primary-bg-lighter, .colorscheme-l-a-bike-trains.primary-bg-lighter {
-  background-color: #89d750;
+  background-color: #c1eaa3;
 }
 
 .colorscheme-l-a-bike-trains .primary-border-lighter, .colorscheme-l-a-bike-trains.primary-border-lighter {
-  border-color: #89d750;
+  border-color: #c1eaa3;
 }
 
 .colorscheme-l-a-bike-trains .title-color, .colorscheme-l-a-bike-trains .single h1.page-title, .single .colorscheme-l-a-bike-trains h1.page-title, .colorscheme-l-a-bike-trains.title-color, .single h1.colorscheme-l-a-bike-trains.page-title {
@@ -7574,15 +7574,15 @@ body {
 }
 
 .colorscheme-l-a-bike-trains .title-color-lighter, .colorscheme-l-a-bike-trains.title-color-lighter {
-  color: #89d750;
+  color: #c1eaa3;
 }
 
 .colorscheme-l-a-bike-trains .title-bg-lighter, .colorscheme-l-a-bike-trains.title-bg-lighter {
-  background-color: #89d750;
+  background-color: #c1eaa3;
 }
 
 .colorscheme-l-a-bike-trains .title-border-lighter, .colorscheme-l-a-bike-trains.title-border-lighter {
-  border-color: #89d750;
+  border-color: #c1eaa3;
 }
 
 .colorscheme-l-a-bike-trains .accent-color, .colorscheme-l-a-bike-trains.accent-color {
@@ -7610,15 +7610,15 @@ body {
 }
 
 .colorscheme-l-a-bike-trains .accent-color-lighter, .colorscheme-l-a-bike-trains.accent-color-lighter {
-  color: #757153;
+  color: #a8a486;
 }
 
-.colorscheme-l-a-bike-trains .accent-bg-lighter, .colorscheme-l-a-bike-trains.accent-bg-lighter {
-  background-color: #757153;
+.colorscheme-l-a-bike-trains .accent-bg-lighter, .colorscheme-l-a-bike-trains .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-l-a-bike-trains a:hover, .colorscheme-l-a-bike-trains.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-l-a-bike-trains:hover {
+  background-color: #a8a486;
 }
 
 .colorscheme-l-a-bike-trains .accent-border-lighter, .colorscheme-l-a-bike-trains.accent-border-lighter {
-  border-color: #757153;
+  border-color: #a8a486;
 }
 
 .colorscheme-l-a-bike-trains .outer-color, .colorscheme-l-a-bike-trains.outer-color {
@@ -7646,15 +7646,15 @@ body {
 }
 
 .colorscheme-l-a-bike-trains .outer-color-lighter, .colorscheme-l-a-bike-trains.outer-color-lighter {
-  color: #809cb0;
+  color: #bfcdd7;
 }
 
 .colorscheme-l-a-bike-trains .outer-bg-lighter, .colorscheme-l-a-bike-trains.outer-bg-lighter {
-  background-color: #809cb0;
+  background-color: #bfcdd7;
 }
 
 .colorscheme-l-a-bike-trains .outer-border-lighter, .colorscheme-l-a-bike-trains.outer-border-lighter {
-  border-color: #809cb0;
+  border-color: #bfcdd7;
 }
 
 .colorscheme-r5y7 .primary-color, .colorscheme-r5y7 h1, .colorscheme-r5y7 h2, .colorscheme-r5y7 h3, .colorscheme-r5y7 h4, .colorscheme-r5y7 h5, .colorscheme-r5y7 h6, .colorscheme-r5y7 a, .colorscheme-r5y7.primary-color, h1.colorscheme-r5y7, h2.colorscheme-r5y7, h3.colorscheme-r5y7, h4.colorscheme-r5y7, h5.colorscheme-r5y7, h6.colorscheme-r5y7, a.colorscheme-r5y7 {
@@ -7682,15 +7682,15 @@ body {
 }
 
 .colorscheme-r5y7 .primary-color-lighter, .colorscheme-r5y7.primary-color-lighter {
-  color: #f25751;
+  color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .primary-bg-lighter, .colorscheme-r5y7.primary-bg-lighter {
-  background-color: #f25751;
+  background-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .primary-border-lighter, .colorscheme-r5y7.primary-border-lighter {
-  border-color: #f25751;
+  border-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .title-color, .colorscheme-r5y7 .single h1.page-title, .single .colorscheme-r5y7 h1.page-title, .colorscheme-r5y7.title-color, .single h1.colorscheme-r5y7.page-title {
@@ -7718,15 +7718,15 @@ body {
 }
 
 .colorscheme-r5y7 .title-color-lighter, .colorscheme-r5y7.title-color-lighter {
-  color: #f25751;
+  color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .title-bg-lighter, .colorscheme-r5y7.title-bg-lighter {
-  background-color: #f25751;
+  background-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .title-border-lighter, .colorscheme-r5y7.title-border-lighter {
-  border-color: #f25751;
+  border-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .accent-color, .colorscheme-r5y7.accent-color {
@@ -7754,15 +7754,15 @@ body {
 }
 
 .colorscheme-r5y7 .accent-color-lighter, .colorscheme-r5y7.accent-color-lighter {
-  color: #f25751;
+  color: #f9b3b0;
 }
 
-.colorscheme-r5y7 .accent-bg-lighter, .colorscheme-r5y7.accent-bg-lighter {
-  background-color: #f25751;
+.colorscheme-r5y7 .accent-bg-lighter, .colorscheme-r5y7 .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-r5y7 a:hover, .colorscheme-r5y7.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-r5y7:hover {
+  background-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .accent-border-lighter, .colorscheme-r5y7.accent-border-lighter {
-  border-color: #f25751;
+  border-color: #f9b3b0;
 }
 
 .colorscheme-r5y7 .outer-color, .colorscheme-r5y7.outer-color {
@@ -7790,15 +7790,15 @@ body {
 }
 
 .colorscheme-r5y7 .outer-color-lighter, .colorscheme-r5y7.outer-color-lighter {
-  color: #404144;
+  color: #717479;
 }
 
 .colorscheme-r5y7 .outer-bg-lighter, .colorscheme-r5y7.outer-bg-lighter {
-  background-color: #404144;
+  background-color: #717479;
 }
 
 .colorscheme-r5y7 .outer-border-lighter, .colorscheme-r5y7.outer-border-lighter {
-  border-color: #404144;
+  border-color: #717479;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-color, .colorscheme-los-angeles-bicycle-festival h1, .colorscheme-los-angeles-bicycle-festival h2, .colorscheme-los-angeles-bicycle-festival h3, .colorscheme-los-angeles-bicycle-festival h4, .colorscheme-los-angeles-bicycle-festival h5, .colorscheme-los-angeles-bicycle-festival h6, .colorscheme-los-angeles-bicycle-festival a, .colorscheme-los-angeles-bicycle-festival.primary-color, h1.colorscheme-los-angeles-bicycle-festival, h2.colorscheme-los-angeles-bicycle-festival, h3.colorscheme-los-angeles-bicycle-festival, h4.colorscheme-los-angeles-bicycle-festival, h5.colorscheme-los-angeles-bicycle-festival, h6.colorscheme-los-angeles-bicycle-festival, a.colorscheme-los-angeles-bicycle-festival {
@@ -7826,15 +7826,15 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-color-lighter, .colorscheme-los-angeles-bicycle-festival.primary-color-lighter {
-  color: #f1458c;
+  color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-bg-lighter, .colorscheme-los-angeles-bicycle-festival.primary-bg-lighter {
-  background-color: #f1458c;
+  background-color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .primary-border-lighter, .colorscheme-los-angeles-bicycle-festival.primary-border-lighter {
-  border-color: #f1458c;
+  border-color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .title-color, .colorscheme-los-angeles-bicycle-festival .single h1.page-title, .single .colorscheme-los-angeles-bicycle-festival h1.page-title, .colorscheme-los-angeles-bicycle-festival.title-color, .single h1.colorscheme-los-angeles-bicycle-festival.page-title {
@@ -7862,15 +7862,15 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .title-color-lighter, .colorscheme-los-angeles-bicycle-festival.title-color-lighter {
-  color: #f1458c;
+  color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .title-bg-lighter, .colorscheme-los-angeles-bicycle-festival.title-bg-lighter {
-  background-color: #f1458c;
+  background-color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .title-border-lighter, .colorscheme-los-angeles-bicycle-festival.title-border-lighter {
-  border-color: #f1458c;
+  border-color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-color, .colorscheme-los-angeles-bicycle-festival.accent-color {
@@ -7898,15 +7898,15 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-color-lighter, .colorscheme-los-angeles-bicycle-festival.accent-color-lighter {
-  color: #91dad2;
+  color: #ddf4f1;
 }
 
-.colorscheme-los-angeles-bicycle-festival .accent-bg-lighter, .colorscheme-los-angeles-bicycle-festival.accent-bg-lighter {
-  background-color: #91dad2;
+.colorscheme-los-angeles-bicycle-festival .accent-bg-lighter, .colorscheme-los-angeles-bicycle-festival .single section.sidebar .page-subnav li a:hover, .single section.sidebar .page-subnav li .colorscheme-los-angeles-bicycle-festival a:hover, .colorscheme-los-angeles-bicycle-festival.accent-bg-lighter, .single section.sidebar .page-subnav li a.colorscheme-los-angeles-bicycle-festival:hover {
+  background-color: #ddf4f1;
 }
 
 .colorscheme-los-angeles-bicycle-festival .accent-border-lighter, .colorscheme-los-angeles-bicycle-festival.accent-border-lighter {
-  border-color: #91dad2;
+  border-color: #ddf4f1;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-color, .colorscheme-los-angeles-bicycle-festival.outer-color {
@@ -7934,15 +7934,15 @@ body {
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-color-lighter, .colorscheme-los-angeles-bicycle-festival.outer-color-lighter {
-  color: #f1458c;
+  color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-bg-lighter, .colorscheme-los-angeles-bicycle-festival.outer-bg-lighter {
-  background-color: #f1458c;
+  background-color: #f8a4c7;
 }
 
 .colorscheme-los-angeles-bicycle-festival .outer-border-lighter, .colorscheme-los-angeles-bicycle-festival.outer-border-lighter {
-  border-color: #f1458c;
+  border-color: #f8a4c7;
 }
 
 html, body {
@@ -7978,6 +7978,7 @@ nav.main {
   color: white;
   padding: 0;
   position: relative;
+  font-size: 1.2em;
   line-height: 2.5em;
   min-height: 2.5em;
 }
@@ -8168,6 +8169,7 @@ nav.contact .menu > .menu-item:first-child {
   }
 }
 .single section.sidebar .page-subnav {
+  line-height: 1.8em;
   margin: 2rem 0;
 }
 .single section.sidebar .page-subnav ul {
@@ -8177,6 +8179,10 @@ nav.contact .menu > .menu-item:first-child {
 .single section.sidebar .page-subnav li {
   list-style: none;
   position: relative;
+}
+.single section.sidebar .page-subnav li a {
+  display: block;
+  padding-left: 0.2em;
 }
 .single section.sidebar .page-subnav li.current_page_item a {
   color: inherit;
@@ -8192,9 +8198,11 @@ nav.contact .menu > .menu-item:first-child {
 }
 .single section.main-content {
   padding: 0 2em;
+  font-size: 1.2em;
 }
 .single section.main-content p {
   margin: 1em 0;
+  line-height: 1.5em;
 }
 @media (max-width: 767px) {
   .single section.main-content {

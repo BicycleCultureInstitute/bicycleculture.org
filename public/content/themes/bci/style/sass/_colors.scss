@@ -70,8 +70,8 @@ $colorSchemes:
     @include colorscheme-pair($name , $part , 'bg-darker'     , 'background-color' , darken($color, 10%));
     @include colorscheme-pair($name , $part , 'border-darker' , 'border-color'     , darken($color, 10%));
 
-    @include colorscheme-pair($name , $part , 'color-lighter'  , 'color'            , lighten($color, 10%));
-    @include colorscheme-pair($name , $part , 'bg-lighter'     , 'background-color' , lighten($color, 10%));
-    @include colorscheme-pair($name , $part , 'border-lighter' , 'border-color'     , lighten($color, 10%));
+    @include colorscheme-pair($name , $part , 'color-lighter'  , 'color'            , lighten($color, 30%));
+    @include colorscheme-pair($name , $part , 'bg-lighter'     , 'background-color' , lighten($color, 30%));
+    @include colorscheme-pair($name , $part , 'border-lighter' , 'border-color'     , lighten($color, 30%));
   }
 }
