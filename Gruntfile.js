@@ -1,6 +1,8 @@
-'use strict';
 
 module.exports = function (grunt) {
+
+  /* jslint node:true */
+  'use strict';
 
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -8,7 +10,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
- 
+
     concat: {
       min: {
         files: {
@@ -16,7 +18,7 @@ module.exports = function (grunt) {
         }
       }
     },
- 
+
     compass: {
       dist: {
         options: {
@@ -68,10 +70,10 @@ module.exports = function (grunt) {
         files: ['public/content/themes/bci/img/src/*.{png,jpg,gif}'],
         tasks: ['imagemin']
       }
-    },
+    }
   });
- 
+
   // Development task checks and concatenates JS, compiles SASS preserving comments and nesting, runs dev server, and starts watch
   grunt.registerTask('default', ['compass', 'concat', 'imagemin', 'browser_sync', 'watch']);
- 
+
  }

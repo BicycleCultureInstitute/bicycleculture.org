@@ -164,6 +164,20 @@ nav.contact {
   line-height: 2em;
   box-shadow: 0 0 6em 3em rgba(0, 0, 0, 0.2);
 
+  > .menu {
+    @extend .col-xs-4;
+  }
+
+  .contact-bar-widgets {
+    @extend .col-xs-4;
+    @extend .pull-right;
+    text-align: right;
+
+    a {
+      margin-left: 0.5em;
+    }
+  }
+
   ul, li {
     list-style: none;
     padding: 0;

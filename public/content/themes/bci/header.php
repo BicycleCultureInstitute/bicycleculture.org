@@ -34,6 +34,9 @@ $body_classes = array('colorscheme-'.$project_slug);
     <nav class="contact">
       <div class="container">
         <?php wp_nav_menu(array('theme_location' => 'contact')); ?>
+        <ul class="contact-bar-widgets">
+          <?php dynamic_sidebar('Contact Bar'); ?>
+        </ul>
       </div>
     </nav>
     <div class="container">
