@@ -1,0 +1,4 @@
+env_*
+public/shared/
+public/wp-config.php
+sql/
