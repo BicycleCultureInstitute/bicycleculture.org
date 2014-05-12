@@ -164,17 +164,36 @@ nav.contact {
   line-height: 2em;
   box-shadow: 0 0 6em 3em rgba(0, 0, 0, 0.2);
 
-  > .menu {
-    @extend .col-xs-4;
+  .container > * {
+    @extend .col-xs-6;
+  }
+    
+  @include breakpoint(max-small) {
+    font-size: 1.3em;
+    // line-height: 2.5em;
   }
 
   .contact-bar-widgets {
-    @extend .col-xs-4;
-    @extend .pull-right;
-    text-align: right;
 
-    a {
-      margin-left: 0.5em;
+    .social-links-widget {
+      text-align: right;
+
+      a {
+        margin-left: 0.5em;
+        text-shadow: 0 0 0.5em $black;
+      }
+
+      .fa-twitter {
+        color: $teal;
+      }
+
+      .fa-facebook, .fa-facebook-square {
+        color: lighten($faceless, 20%);
+      }
+
+      .fa-google-plus, .fa-google-plus-square {
+        color: $magenta;
+      }
     }
   }
 
@@ -273,13 +292,13 @@ nav.contact .menu {
       line-height: 1.8em;
       margin: 2rem 0;
 
-      @include breakpoint(max-small) {
-        display: none;
+      // @include breakpoint(max-small) {
+      //   display: none;
 
-        &.expand {
-          display: block;
-        }
-      }
+      //   &.expand {
+      //     display: block;
+      //   }
+      // }
 
       ul {
         padding: 0;

@@ -5,7 +5,7 @@ class Social_Links_Widget extends WP_Widget {
   public $services = array(
     'facebook'=>array(
       'label'=>'Facebook',
-      'class'=>'fa fa-facebook',
+      'class'=>'fa fa-facebook-square',
     ),
     'twitter'=>array(
       'label'=>'Twitter',
@@ -17,7 +17,7 @@ class Social_Links_Widget extends WP_Widget {
     ),
     'google_plus'=>array(
       'label'=>'Google+',
-      'class'=>'fa fa-google-plus',
+      'class'=>'fa fa-google-plus-square',
     ),
     'pinterest'=>array(
       'label'=>'Pinterest',
@@ -30,7 +30,7 @@ class Social_Links_Widget extends WP_Widget {
   }
 
   function widget($args, $instance) {
-    $markup = '';
+    $markup = '<div class="social-links-widget">';
     $links = array();
     foreach ($this->services as $key=>$service) {
       if (isset($instance[$key]) && $instance[$key]) {
@@ -47,6 +47,7 @@ class Social_Links_Widget extends WP_Widget {
     foreach ($links as $link) {
       $markup .= "<a href=\"{$link['url']}\" class=\"{$link['serviceClass']}\" target=\"{$link['service']}\" title=\"{$link['serviceName']}\"></a>\n";
     }
+    $markup .= '</div>';
     echo $markup;
   }
 

@@ -1018,8 +1018,7 @@ blockquote .small:before {
 }
 
 .blockquote-reverse,
-blockquote.pull-right,
-nav.contact blockquote.contact-bar-widgets {
+blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   text-align: right;
@@ -1029,25 +1028,19 @@ nav.contact blockquote.contact-bar-widgets {
 
 .blockquote-reverse footer:before,
 blockquote.pull-right footer:before,
-nav.contact blockquote.contact-bar-widgets footer:before,
 .blockquote-reverse small:before,
 blockquote.pull-right small:before,
-nav.contact blockquote.contact-bar-widgets small:before,
 .blockquote-reverse .small:before,
-blockquote.pull-right .small:before,
-nav.contact blockquote.contact-bar-widgets .small:before {
+blockquote.pull-right .small:before {
   content: '';
 }
 
 .blockquote-reverse footer:after,
 blockquote.pull-right footer:after,
-nav.contact blockquote.contact-bar-widgets footer:after,
 .blockquote-reverse small:after,
 blockquote.pull-right small:after,
-nav.contact blockquote.contact-bar-widgets small:after,
 .blockquote-reverse .small:after,
-blockquote.pull-right .small:after,
-nav.contact blockquote.contact-bar-widgets .small:after {
+blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 
@@ -1149,14 +1142,14 @@ pre code {
   margin-left: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, nav.contact > .menu, nav.contact .contact-bar-widgets, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .single section.sidebar, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .single section.main-content, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, nav.main li, body > header h1, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .projects-widget a, .col-sm-4, body > header .widget, body > header .menu-projects-container li, .single section.sidebar, .col-md-4, .projects-widget, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, nav.contact .container > *, nav.contact .single > *, .col-sm-6, .projects-widget, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .single section.main-content, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, body > header .header-widgets, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body > header h1, .projects-widget, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, nav.contact > .menu, nav.contact .contact-bar-widgets, .projects-widget a, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, body > header h1, .projects-widget {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .projects-widget a, .col-xs-5, .col-xs-6, nav.contact .container > *, nav.contact .single > *, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, body > header h1, .projects-widget {
   float: left;
 }
 
@@ -1184,7 +1177,7 @@ pre code {
   width: 58.33333333%;
 }
 
-.col-xs-6 {
+.col-xs-6, nav.contact .container > *, nav.contact .single > * {
   width: 50%;
 }
 
@@ -1192,7 +1185,7 @@ pre code {
   width: 41.66666667%;
 }
 
-.col-xs-4, nav.contact > .menu, nav.contact .contact-bar-widgets, .projects-widget a {
+.col-xs-4, .projects-widget a {
   width: 33.33333333%;
 }
 
@@ -3969,7 +3962,7 @@ input[type="button"].btn-block {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
-.dropdown-menu.pull-right, nav.contact .dropdown-menu.contact-bar-widgets {
+.dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
@@ -4057,7 +4050,7 @@ input[type="button"].btn-block {
   z-index: 990;
 }
 
-.pull-right > .dropdown-menu, nav.contact .contact-bar-widgets > .dropdown-menu {
+.pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -5837,7 +5830,7 @@ a.thumbnail.active {
   margin-right: 10px;
 }
 
-.media > .pull-right, nav.contact .media > .contact-bar-widgets {
+.media > .pull-right {
   margin-left: 10px;
 }
 
@@ -7073,7 +7066,7 @@ button.close {
   margin-left: auto;
 }
 
-.pull-right, nav.contact .contact-bar-widgets {
+.pull-right {
   float: right !important;
 }
 
@@ -8099,11 +8092,26 @@ nav.contact:after {
   display: table;
   clear: both;
 }
-nav.contact .contact-bar-widgets {
+@media (max-width: 767px) {
+  nav.contact {
+    font-size: 1.3em;
+  }
+}
+nav.contact .contact-bar-widgets .social-links-widget {
   text-align: right;
 }
-nav.contact .contact-bar-widgets a {
+nav.contact .contact-bar-widgets .social-links-widget a {
   margin-left: 0.5em;
+  text-shadow: 0 0 0.5em black;
+}
+nav.contact .contact-bar-widgets .social-links-widget .fa-twitter {
+  color: #6bcdc3;
+}
+nav.contact .contact-bar-widgets .social-links-widget .fa-facebook, nav.contact .contact-bar-widgets .social-links-widget .fa-facebook-square {
+  color: #718dc8;
+}
+nav.contact .contact-bar-widgets .social-links-widget .fa-google-plus, nav.contact .contact-bar-widgets .social-links-widget .fa-google-plus-square {
+  color: #ee156f;
 }
 nav.contact ul, nav.contact li {
   list-style: none;
@@ -8186,14 +8194,6 @@ nav.contact .menu > .menu-item:first-child {
   line-height: 1.8em;
   margin: 2rem 0;
 }
-@media (max-width: 767px) {
-  .single section.sidebar nav.page-subnav {
-    display: none;
-  }
-  .single section.sidebar nav.page-subnav.expand {
-    display: block;
-  }
-}
 .single section.sidebar nav.page-subnav ul {
   padding: 0;
   margin: 0;
@@ -8240,11 +8240,15 @@ nav.contact .menu > .menu-item:first-child {
 }
 @media (max-width: 767px) {
   .projects-widget {
-    line-height: 90px;
+    line-height: 50px;
+    width: 300px;
+    float: none;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 .projects-widget a {
-  padding: 0 0.5em;
+  padding: 0.5em;
 }
 .projects-widget a .logo {
   width: 100%;
