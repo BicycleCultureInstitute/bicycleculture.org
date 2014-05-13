@@ -101,3 +101,54 @@ function theMissing() {
     </article>';
   echo $missing;
 }
+
+// consume the Featured advanced custom fields
+function theSlideshow() {
+  // if (isset($fields['slideshow'])) :
+  //   echo '<div class="slideshow">';
+  //   foreach ($fields['slideshow'] as $field) :
+  //     $title = $field['title'];
+  //     $bg_image = $field['background_image'];
+  //     echo '<div class="slide">';
+  //     echo "<h2>$title</h2>";
+  //     echo '</div>';
+  //   endforeach;
+  //   echo '</div>';
+  // endif;
+}
+
+// consume the Featured advanced custom fields
+function theFeatured() {
+  $featured = get_field('featured');
+
+  if ($featured) {
+    echo '<div class="featured">';
+    foreach ($featured as $field) {
+      echo '<div class="feature">';
+      if ($field['source_type'] == 'relationship') {
+        $relationship = $field['source_relationship'];
+        if ($relationship) {
+          $post = $relationship[0];
+          if (has_post_thumbnail($post->ID)) {
+            $imageID = get_post_thumbnail_id($post->ID);
+            $imageInfo = wp_get_attachment_image_src($imageID);
+            $imageSRC = $imageInfo[0];
+          } else {
+            $imageSRC = 'post, but no featured image';
+          }
+          $title = $post->post_title;
+          $link = get_permalink($post);
+        }
+      } else {
+        $title = 'url title';
+        $imageSRC = 'url image';
+      }
+      echo "<h2><a href=\"$link\">";
+      echo "$title";
+      echo aspectImage($imageSRC);
+      echo '</a></h2>';
+      echo '</div>';
+    }
+    echo '</div>';
+  }
+}

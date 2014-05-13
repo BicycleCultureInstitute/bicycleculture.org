@@ -27,6 +27,8 @@ echo '<div class="single projects-list">';
 
       echo '</article>';
 
+      theFeatured();
+
     endwhile;
   else:
 
