@@ -7,17 +7,20 @@ body {
   font-family: serif;
 }
 @mixin sans {
-  font-family: 'omnes-pro', sans-serif;
+  // font-family: 'omnes-pro', sans-serif;
+  font-family: 'proxima-nova-alt-condensed', sans-serif;
   font-weight: 400;
-  em {
-    font-weight: 200;
-  }
+  // em {
+  //   font-weight: 200;
+  // }
 }
-@mixin logo {
+@mixin titling {
   font-family: 'omnes-pro', sans-serif;
-  font-weight: 600;
 }
 @mixin headline {
-  font-family: 'futura-pt', sans-serif;
-  font-weight: 500;
+  @include titling;
+  font-weight: 600;
+}
+@mixin condensed {
+  font-family: 'proxima-nova-alt-condensed', sans-serif;
 }

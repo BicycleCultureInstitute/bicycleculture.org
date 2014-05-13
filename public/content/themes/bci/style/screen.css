@@ -7950,12 +7950,13 @@ html, body {
 }
 
 body {
-  font-family: 'omnes-pro', sans-serif;
+  font-family: 'proxima-nova-alt-condensed', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
-body em {
-  font-weight: 200;
+
+nav {
+  font-family: 'omnes-pro', sans-serif;
 }
 
 a {
@@ -8052,7 +8053,6 @@ body > header .container, body > header .single {
 }
 body > header h1 {
   font-family: 'omnes-pro', sans-serif;
-  font-weight: 600;
   padding: 0;
   margin: 0;
 }
@@ -8103,6 +8103,13 @@ nav.contact .contact-bar-widgets .social-links-widget {
 nav.contact .contact-bar-widgets .social-links-widget a {
   margin-left: 0.5em;
   text-shadow: 0 0 0.5em black;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+nav.contact .contact-bar-widgets .social-links-widget a:hover {
+  color: white;
 }
 nav.contact .contact-bar-widgets .social-links-widget .fa-twitter {
   color: #6bcdc3;
@@ -8149,7 +8156,6 @@ nav.contact .menu > .menu-item:first-child {
 }
 .single h1.page-title {
   font-family: 'omnes-pro', sans-serif;
-  font-weight: 600;
   font-weight: 400;
   margin: 2rem 0;
   padding: 0;

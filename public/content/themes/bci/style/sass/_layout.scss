@@ -8,7 +8,11 @@ body {
   @extend .outer-bg;
 }
 h1, h2, h3, h4, h5, h6 {
+  @extend headline;
   @extend .primary-color;
+}
+nav {
+  @include titling;
 }
 a {
   @extend .primary-color;
@@ -111,7 +115,7 @@ body > header {
   }
 
   h1 {
-    @include logo;
+    @include titling;
     @extend .col-sm-2;
     @extend .col-xs-12;
     padding: 0;
@@ -181,6 +185,11 @@ nav.contact {
       a {
         margin-left: 0.5em;
         text-shadow: 0 0 0.5em $black;
+        @include transition-duration(0.1s);
+
+        &:hover {
+          color: $white;
+        }
       }
 
       .fa-twitter {
@@ -242,7 +251,7 @@ nav.contact .menu {
   padding-bottom: 5em;
 
   h1.page-title {
-    @include logo;
+    @include titling;
     font-weight: 400;
     @extend .title-color;
     margin: 2rem 0;
