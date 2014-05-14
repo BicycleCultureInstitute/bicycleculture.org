@@ -31,6 +31,14 @@ register_sidebar( array(
   'after_widget' => '' */
 ) );
 
+register_sidebar( array(
+  'name' => 'Side Bar'/*,
+  'before_title' => '',
+  'after_title' => '',
+  'before_widget' => '',
+  'after_widget' => '' */
+) );
+
 // Define Customization Options
 
 function bci_customize_register($wp_customize) {

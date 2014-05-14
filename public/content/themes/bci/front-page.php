@@ -4,26 +4,38 @@
 */
 get_header();
 
-echo '<section class="single">';
+echo '<div class="single">';
 
+  echo '<section class="slideshow">';
+    theSlideshow();
+  echo '</section>';
 
-  if(have_posts()) : while(have_posts()) : the_post();
+  echo '<section class="main-content">';
 
-    echo '<article>';
+  if(have_posts()) :
+    while(have_posts()) : the_post();
 
-    theTitle();
-    the_content();
+      echo '<article>';
 
-    echo '</article>';
+      the_content();
 
-    theFeatured();
+      echo '</article>';
 
-  endwhile; else: 
+      theFeatured();
+
+    endwhile;
+  else:
 
     theMissing();
 
   endif;
 
-echo '</section>';
+  echo '</section>';
+
+  echo '<section class="sidebar">';
+    dynamic_sidebar('Side Bar');
+  echo '</section>';
+
+echo '</div>';
 
 get_footer(); ?>

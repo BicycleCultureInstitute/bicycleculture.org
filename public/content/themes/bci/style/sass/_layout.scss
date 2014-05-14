@@ -8,8 +8,9 @@ body {
   @extend .outer-bg;
 }
 h1, h2, h3, h4, h5, h6 {
-  @extend headline;
+  @include headline;
   @extend .primary-color;
+  font-weight: 400;
 }
 nav {
   @include titling;
@@ -247,122 +248,146 @@ nav.contact .menu {
 }
 .single {
   @extend .container;
-  min-height: 50%;
   padding-bottom: 5em;
-
-  h1.page-title {
-    @include titling;
-    font-weight: 400;
-    @extend .title-color;
-    margin: 2rem 0;
-    padding: 0;
-  }
-
-  h1.featured-image {
-    position: relative;
-
-    .scaled-image {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 0px;
-      padding-bottom: 45%;
-    }
-
-    span {
-      display: block;
-
-      @include breakpoint(max-small) {
-        margin-bottom: 0.3em;
-      }
-      @include breakpoint(min-small) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-        z-index: 1;
-        background: $white;
-        padding: 0 1em 0.5em 2em;
-        min-width: 9em;
-        border-radius: 0 0 0.5em 0;
-      }
-    }
-  }
-
-  section.sidebar {
-    @extend .col-sm-4;
-    @extend .col-sm-push-8;
-
-    @include breakpoint(max-small) {
-      padding: 0;
-    }
-
-    nav.page-subnav {
-      line-height: 1.8em;
-      margin: 2rem 0;
-
-      // @include breakpoint(max-small) {
-      //   display: none;
-
-      //   &.expand {
-      //     display: block;
-      //   }
-      // }
-
-      ul {
-        padding: 0;
-        margin: 0;
-      }
-
-      li {
-        list-style: none;
-        position: relative;
-
-        a {
-          display: block;
-          padding-left: 0.2em;
-
-          &:hover {
-            @extend .accent-bg-lighter;
-          }
-        }
-
-        &.current_page_item {
-          a {
-            color: inherit;
-          }
-
-          &::before {
-            content: '\25b6';
-            display: block;
-            position: absolute;
-            font-size: 0.8em;
-            left: -0.8rem;
-            top: 0;
-          }
-        }
-      }
-    }
-  }
-
-  section.main-content {
-    @extend .col-sm-8;
-    @extend .col-sm-pull-4;
-    padding: 0 2em;
-    font-size: 1.2em;
-
-    p {
-      margin: 1em 0;
-      line-height: 1.5em;
-    }
-
-    @include breakpoint(max-small) {
-      padding: 0;
-    }
-  }
+  min-height: 50%;
 
   article.the-missing {
     text-align: center;
   }
 
+}
+
+h1.page-title {
+  @include titling;
+  font-weight: 400;
+  @extend .title-color;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+h1.featured-image {
+  position: relative;
+
+  .scaled-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 0px;
+    padding-bottom: 45%;
+  }
+
+  span {
+    @extend .corner-title;
+  }
+}
+
+section.content-subnav {
+  @extend .col-md-3;
+
+  @include breakpoint(max-small) {
+    padding: 0;
+  }
+}
+
+section.sidebar {
+  @extend .col-md-3;
+  .page-subnav {
+    font-size: 1.2em;
+  }
+}
+
+section.main-content {
+  @extend .col-md-9;
+  padding: 0;
+  font-size: 1.2em;
+
+  p {
+    margin: 1em 0;
+    line-height: 1.5em;
+  }
+}
+
+nav.page-subnav {
+  line-height: 1.8em;
+  margin: 2rem 0;
+
+  // @include breakpoint(max-small) {
+  //   display: none;
+
+  //   &.expand {
+  //     display: block;
+  //   }
+  // }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+
+    a {
+      display: block;
+      padding-left: 0.2em;
+
+      &:hover {
+        @extend .accent-bg-lighter;
+      }
+    }
+
+    &.current_page_item {
+      a {
+        color: inherit;
+      }
+
+      &::before {
+        content: '\25b6';
+        display: block;
+        position: absolute;
+        font-size: 0.8em;
+        left: -0.8rem;
+        top: 0;
+      }
+    }
+  }
+}
+
+.slice-title {
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  position: absolute;
+  z-index: 1;
+  background-color: $white;
+  margin: 0;
+  border-radius: 0 0 0.5em 0;
+  padding: 0 1em 0.3em 0;
+
+  @include breakpoint(min-large) {
+    width: 100%;
+    margin: 0.5em 0 0;
+    padding: 0;
+    border-radius: none;
+  }
+}
+
+.corner-title {
+  display: block;
+
+  @include breakpoint(max-small) {
+    margin-bottom: 0.3em;
+  }
+  @include breakpoint(min-small) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+    background: $white;
+    padding: 0 1em 0.5em 2em;
+    min-width: 9em;
+    border-radius: 0 0 0.5em 0;
+  }
 }

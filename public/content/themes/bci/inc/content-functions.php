@@ -104,24 +104,45 @@ function theMissing() {
 
 // consume the Featured advanced custom fields
 function theSlideshow() {
-  // if (isset($fields['slideshow'])) :
-  //   echo '<div class="slideshow">';
-  //   foreach ($fields['slideshow'] as $field) :
-  //     $title = $field['title'];
-  //     $bg_image = $field['background_image'];
-  //     echo '<div class="slide">';
-  //     echo "<h2>$title</h2>";
-  //     echo '</div>';
-  //   endforeach;
-  //   echo '</div>';
-  // endif;
+  $use_slideshow = get_field('use_slideshow');
+  $slideshow = get_field('slideshow');
+  if ($use_slideshow && $slideshow) {
+    echo '<div class="slideshow-container">';
+    $i = 0;
+    foreach ($slideshow as $field) {
+      $i++;
+      $slide_classes = array('slide');
+      if ($i == 1) {
+        $slide_classes[] = 'active';
+      }
+      if ($field['link_type'] == 'url') {
+        $link = $field['url_link'];
+      } else {
+        $link = get_permalink($field['page_link']);
+      }
+      echo '<article class="'.implode(' ', $slide_classes).'" data-duration="'.$field['duration'].'">';
+      echo '<a href="'.$link.'">';
+      echo '<h2>'.$field['title'].'</h2>';
+      echo '<div class="slide-text" style="background-color:'.$field['background_color'].'; color:'.$field['text_color'].';">';
+        echo $field['message'];
+      echo '</div>';
+      echo '<div class="slide-image">';
+      if ($field['image']) {
+        echo '<img src="'.$field['image']['url'].'">';
+      }
+      echo '</div>';
+      echo '</a>';
+      echo '</article>';
+  }
+    echo '</div>';
+  }
 }
 
 // consume the Featured advanced custom fields
 function theFeatured() {
+  $use_featured = get_field('use_featured');
   $featured = get_field('featured');
-
-  if ($featured) {
+  if ($use_featured && $featured) {
     echo '<div class="featured">';
     foreach ($featured as $field) {
       echo '<div class="feature">';
@@ -143,10 +164,12 @@ function theFeatured() {
         $title = 'url title';
         $imageSRC = 'url image';
       }
-      echo "<h2><a href=\"$link\">";
+      echo "<a href=\"$link\">";
+      echo "<h2>";
       echo "$title";
+      echo '</h2>';
       echo aspectImage($imageSRC);
-      echo '</a></h2>';
+      echo '</a>';
       echo '</div>';
     }
     echo '</div>';

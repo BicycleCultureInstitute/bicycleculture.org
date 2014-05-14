@@ -12,4 +12,25 @@ jQuery(document).ready(function($) {
     }, 300);
   });
 
+  var nextSlide = function(slideshow) {
+    var active, next, duration, timeoutID;
+    active = $('.active', slideshow);
+    next = active.next();
+    if (!next.length) {
+      next = slideshow.children().first();
+    }
+    duration = active.data('duration');
+    timeoutID = setTimeout(function() {
+      active.removeClass('active');
+      next.addClass('active');
+      nextSlide(slideshow);
+    }, (duration && !isNaN(duration) ? duration * 1000 : 7000));
+
+    slideshow.data('timeoutID', timeoutID);
+  };
+
+  $('.slideshow-container').each(function() {
+    nextSlide($(this));
+  });
+
 });

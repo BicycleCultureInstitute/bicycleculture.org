@@ -6,9 +6,10 @@ get_header();
 
 echo '<div class="single">';
 
-  echo '<section class="sidebar">';
-  theSubnav();
+  echo '<section class="visible-xs">';
+    theSubnav();
   echo '</section>';
+
   echo '<section class="main-content">';
 
   if(have_posts()) :
@@ -31,6 +32,13 @@ echo '<div class="single">';
 
   endif;
 
+  echo '</section>';
+
+  echo '<section class="sidebar">';
+    echo '<div class="hidden-xs">';
+      theSubnav();
+    echo '</div>';
+    dynamic_sidebar('Side Bar');
   echo '</section>';
 
 echo '</div>';
