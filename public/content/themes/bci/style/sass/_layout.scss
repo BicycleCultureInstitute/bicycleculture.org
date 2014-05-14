@@ -291,8 +291,15 @@ section.content-subnav {
 
 section.sidebar {
   @extend .col-md-3;
+  margin-top: 1em;
+
   .page-subnav {
     font-size: 1.2em;
+    margin-bottom: 2em
+  }
+
+  li {
+    list-style: none;
   }
 }
 
@@ -300,6 +307,10 @@ section.main-content {
   @extend .col-md-9;
   padding: 0;
   font-size: 1.2em;
+
+  article {
+    @extend .col-md-12;
+  }
 
   p {
     margin: 1em 0;
@@ -389,5 +400,30 @@ nav.page-subnav {
     padding: 0 1em 0.5em 2em;
     min-width: 9em;
     border-radius: 0 0 0.5em 0;
+  }
+}
+
+body > footer {
+  @extend .container;
+  background-color: $aluminum;
+  color: $white;
+  line-height: 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+
+  .menu-contact-container {
+    display: inline;
+    ul, li {
+      list-style: none;
+      display: inline;
+      padding: 0;
+    }
+    a {
+      color: $white;
+      &:hover {
+        color: $black;
+      }
+      margin-left: 1em;
+    }
   }
 }
