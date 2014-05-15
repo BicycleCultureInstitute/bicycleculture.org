@@ -115,13 +115,15 @@ function theSlideshow() {
       if ($i == 1) {
         $slide_classes[] = 'active';
       }
+      $link = false;
       if ($field['link_type'] == 'url') {
-        $link = $field['url_link'];
-      } else {
+        if ($field['url_link']) $link = $field['url_link'];
+      } else if ($field['page_link']) {
         $link = get_permalink($field['page_link']);
       }
       echo '<article class="'.implode(' ', $slide_classes).'" data-duration="'.$field['duration'].'">';
-      echo '<a href="'.$link.'">';
+      if ($link)
+        echo '<a href="'.$link.'">';
       echo '<h2>'.$field['title'].'</h2>';
       echo '<div class="slide-text" style="background-color:'.$field['background_color'].'; color:'.$field['text_color'].';">';
         echo $field['message'];
@@ -131,7 +133,8 @@ function theSlideshow() {
         echo '<img src="'.$field['image']['url'].'">';
       }
       echo '</div>';
-      echo '</a>';
+      if ($link)
+        echo '</a>';
       echo '</article>';
   }
     echo '</div>';
