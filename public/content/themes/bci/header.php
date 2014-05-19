@@ -10,8 +10,8 @@ $body_classes = array('colorscheme-'.$project_slug);
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" initial-scale="1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" initial-scale="1.0">
 
   <title><?php wp_title('|'); ?></title>
 
@@ -22,6 +22,7 @@ $body_classes = array('colorscheme-'.$project_slug);
   $style_uri  = get_bloginfo('template_url') . $stylesheet . '?' . filemtime($style_path);
   ?>
 
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="<?php echo $style_uri; ?>" />
 
   <script type="text/javascript" src="//use.typekit.net/jbq0msd.js"></script>
