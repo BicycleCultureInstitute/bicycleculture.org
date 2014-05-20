@@ -18,9 +18,8 @@ update_option('upload_url_path', '/shared');
 
 // Loads Google Analytics
 if($environment['name'] === 'production') {
-  $google_analytics_id = 'UA-XXXXXXXX-X'; // override this value in functions.php
   function google_analytics() {
-    global $env_default, $google_analytics_id;
+    global $env_default;
     $default_hostname = preg_replace('/^https?:\/\//', '', $env_default['hostname']); ?>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,7 +27,7 @@ if($environment['name'] === 'production') {
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', '<?php echo $google_analytics_id ?>', '<?php echo $default_hostname ?>');
+      ga('create', '<?php echo get_theme_mod('ga_id') ?>', '<?php echo $default_hostname ?>');
       ga('send', 'pageview');
     </script><?php
   }

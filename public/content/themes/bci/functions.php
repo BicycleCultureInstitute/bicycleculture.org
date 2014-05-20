@@ -6,8 +6,6 @@ require_once get_template_directory() . '/inc/social-links-widget.php';
 require_once get_template_directory() . '/inc/assets.php';
 require_once get_template_directory() . '/inc/content-functions.php';
 
-$google_analytics_id = 'UA-XXXXXXXX-X';
-
 // Navigation Menu Array
 register_nav_menus( array(
   'main' => 'Main Navigation',
@@ -42,6 +40,7 @@ register_sidebar( array(
 // Define Customization Options
 
 function bci_customize_register($wp_customize) {
+  // Logo setting
   $wp_customize->add_section( 'images' , array(
     'title'       => 'Images',
     'priority'    => 30,
@@ -54,6 +53,22 @@ function bci_customize_register($wp_customize) {
     'label'      => 'Logo',
     'section'    => 'images',
     'settings'   => 'logo',
+    'priority'   => 1
+  ) ) );
+
+  // Google Analytics setting
+  $wp_customize->add_section( 'integration' , array(
+    'title'       => 'Integration',
+    'priority'    => 10,
+  ) );
+  $wp_customize->add_setting( 'ga_id' , array(
+    'default'     => '',
+    'transport'   => 'refresh',
+  ) );
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ga_id', array(
+    'label'      => 'Google Analytics ID',
+    'section'    => 'integration',
+    'settings'   => 'ga_id',
     'priority'   => 1
   ) ) );
 }
