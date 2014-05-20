@@ -7950,6 +7950,10 @@ body {
   border-color: #f8a4c7;
 }
 
+a.twitter-timeline {
+  visibility: hidden;
+}
+
 html, body {
   height: 100%;
 }
