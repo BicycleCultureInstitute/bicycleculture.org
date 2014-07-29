@@ -8310,6 +8310,12 @@ body > footer .menu-contact-container a:hover {
   color: black;
 }
 
+#wpstats {
+  position: absolute;
+  z-index: 0;
+  visibility: hidden;
+}
+
 .projects-widget {
   line-height: 120px;
 }
