@@ -2,6 +2,7 @@
 
 require_once get_template_directory() . '/inc/init.php';
 require_once get_template_directory() . '/inc/projects-widget.php';
+require_once get_template_directory() . '/inc/sponsors-widget.php';
 require_once get_template_directory() . '/inc/social-links-widget.php';
 require_once get_template_directory() . '/inc/assets.php';
 require_once get_template_directory() . '/inc/content-functions.php';
@@ -88,6 +89,7 @@ add_action('customize_register', 'bci_customize_register');
 
 function register_theme_widgets() {
   register_widget('Project_Logos_Widget');
+  register_widget('Sponsor_Logos_Widget');
   register_widget('Social_Links_Widget');
 }
 

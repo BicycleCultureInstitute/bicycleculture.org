@@ -7,14 +7,26 @@ class Sponsor_Logos_Widget extends WP_Widget {
   }
 
   function widget($args, $instance) {
-    $markup = '<div class="sponsor-logos-widget">';
-    var_dump( $instance ); // XXX
-    $links = array();
-    foreach ($links as $link) {
-      $markup .= "<a href=\"{$link['url']}\" class=\"{$link['serviceClass']}\" target=\"{$link['service']}\" title=\"{$link['serviceName']}\"></a>\n";
-    }
-    $markup .= '</div>';
-    echo $markup;
+
+    var_dump( $instance );
+
+    echo '<div class="sponsors-widget">';
+
+    echo 'sponsors FPO'; // XXX
+
+    // foreach ( $instance as $key => $value ) :
+    //   $logoColor = get_field('logo_color');
+    //   $logoGrayscale = get_field('logo_grayscale');
+    //   $classes = array('sponsor-logo', 'sponsor-logo-'.$post->post_name);
+
+    //   echo '<a class="'.implode(' ', $classes).'" href="'.get_the_permalink().'">';
+    //   echo '<span style="background-image:url('.$logoColor['url'].')" class="logo logo-color"></span>';
+    //   echo '<span style="background-image:url('.$logoGrayscale['url'].')" class="logo logo-grayscale"></span>';
+    //   echo '</a>';
+    // endforeach;
+
+    echo '</div>';
+
   }
 
   function update($new_instance, $old_instance) {
@@ -22,46 +34,42 @@ class Sponsor_Logos_Widget extends WP_Widget {
   }
 
   function form($instance) {
-    $markup = '<table>';
-    $markup .= '<tr>';
-    $markup .= '<th>Service</th>';
-    $markup .= '<th>URL</th>';
-    $markup .= '<th>Order</th>';
-    $markup .= '</tr>';
+    $markup = '';
 
-    foreach ($this->services as $key=>$service) {
-
-      $url_name = $this->get_field_name($key);
-      if (isset($instance[$key])) {
-        $url_value = esc_attr($instance[$key]);
-      } else {
-        $url_value = '';
-      }
-
-      $order_name = $this->get_field_name('order_'.$key);
-      if (isset($instance['order_'.$key])) {
-        $order_value = esc_attr($instance['order_'.$key]);
-      } else {
-        $order_value = '0';
-      }
-
-      $markup .= '<tr>';
-      $markup .= "<td>{$service['label']}</td>";
-      $markup .= "<td><input type=\"text\" name=\"$url_name\" value=\"$url_value\"></td>";
-      $markup .= "<td><input type=\"text\" name=\"$order_name\" value=\"$order_value\" size=\"2\"></td>";
-      $markup .= "</tr>\n";
+    for ( $i = 1; $i <= 4; $i++ ) {
+      $markup .= '<div>';
+      $markup .= "<label>Logo</label><input type=\"file\" name=\"logo_$i\" value=\"{$instance["logo_$i"]}\"><br>";
+      $markup .= "<label>URL</label><input type=\"text\" name=\"url_$i\" value=\"{$instance["url_$i"]}\"><br>";
+      $markup .= "<label>Order</label><input type=\"text\" name=\"order_$i\" size=\"2\" value=\"{$instance["order_$i"]}\">";
+      $markup .= "<hr>";
+      $markup .= "</div>\n";
     }
+    // foreach ($instance as $key=>$service) {
+
+    //   $url_name = $this->get_field_name($key);
+    //   if (isset($instance[$key])) {
+    //     $url_value = esc_attr($instance[$key]);
+    //   } else {
+    //     $url_value = '';
+    //   }
+
+    //   $order_name = $this->get_field_name('order_'.$key);
+    //   if (isset($instance['order_'.$key])) {
+    //     $order_value = esc_attr($instance['order_'.$key]);
+    //   } else {
+    //     $order_value = '0';
+    //   }
+
+    //   $markup .= '<tr>';
+    //   $markup .= "<td>{$service['label']}</td>";
+    //   $markup .= "<td><input type=\"text\" name=\"$url_name\" value=\"$url_value\"></td>";
+    //   $markup .= "<td><input type=\"text\" name=\"$order_name\" value=\"$order_value\" size=\"2\"></td>";
+    //   $markup .= "</tr>\n";
+    // }
+
+
     $markup .= '</table>';
     echo $markup;
-  }
-
-  function sortLinks($a, $b) {
-    if ($a['order'] > $b['order'])
-      return 1;
-    else if ($a['order'] < $b['order'])
-      return -1;
-    else
-      return 0;
   }
 
 }
